@@ -56,7 +56,8 @@ repos:
             (?x)^(
                 .*cs.meta|
                 .*.css|
-                .*.meta
+                .*.meta|
+                .*.bat
             )$
         args: [--fix=lf]
 
