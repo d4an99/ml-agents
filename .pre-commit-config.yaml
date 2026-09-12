@@ -57,7 +57,8 @@ repos:
                 .*cs.meta|
                 .*.css|
                 .*.meta|
-                .*.bat
+                .*.bat|
+                guias-desbloqueio/LEIA-ME.txt
             )$
         args: [--fix=lf]
 
