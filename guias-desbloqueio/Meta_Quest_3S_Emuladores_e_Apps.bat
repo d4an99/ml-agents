@@ -16,7 +16,9 @@ rem ============================================================================
 
 set "PASTA=%~dp0"
 set "PROG=%PASTA%progresso_quest3s_emuladores.txt"
-set "TOTAL=20"
+set "TOTAL=26"
+set "ASCII=0"
+set "PSB64=CgAkAHMAcgBjAD0AJABlAG4AdgA6AFMAQQBfAFMAUgBDADsAIAAkAGQAcwB0AD0AJABlAG4AdgA6AFMAQQBfAEQAUwBUAAoAJAB0AD0AWwBJAE8ALgBGAGkAbABlAF0AOgA6AFIAZQBhAGQAQQBsAGwAVABlAHgAdAAoACQAcwByAGMALABbAFQAZQB4AHQALgBFAG4AYwBvAGQAaQBuAGcAXQA6ADoAVQBUAEYAOAApAAoAJABtAGEAcAA9AEAAewAKACAAKABbAHMAdAByAGkAbgBnAF0AWwBjAGgAYQByAF0AMAB4ADIAMQA5ADIAKQA9ACcALQBeAD4AJwA7ACAAIAAgACMAIACSIQoAIAAoAFsAcwB0AHIAaQBuAGcAXQBbAGMAaABhAHIAXQAwAHgAMgAxADkANAApAD0AJwAgAG8AdQAgACcAOwAgACAAIwAgAJQhCgAgACgAWwBzAHQAcgBpAG4AZwBdAFsAYwBoAGEAcgBdADAAeAAyADYAMwAwACkAPQAnAFsAbQBlAG4AdQBdACcAOwAjACAAMCYKACAAKABbAHMAdAByAGkAbgBnAF0AWwBjAGgAYQByAF0AMAB4ADIANwAxADMAKQA9ACcATwBLACcAOwAgACAAIAAgACMAIAATJwoAIAAoACcA5WUsZycAKQA9ACcATgBpAGgAbwBuACAAKABKAGEAcABhAG8AKQAnADsACgAgACgAJwAtippbVzBqMEQwJwApAD0AJwBuAGEAbwAgAGQAZQBmAGkAbgBpAHIAJwA7AAoAIAAoACcAALNc1fy7ba0nACkAPQAnAEQAYQBlAGgAYQBuACAATQBpAG4AZwB1AGsAIAAoAEMAbwByAGUAaQBhACkAJwA7AAoAIAAoACcAJMEVyFjVwMkgAErFTMcnACkAPQAnAG4AYQBvACAAZABlAGYAaQBuAGkAcgAnAAoAfQAKAGYAbwByAGUAYQBjAGgAKAAkAGsAIABpAG4AIAAkAG0AYQBwAC4ASwBlAHkAcwApAHsAIAAkAHQAPQAkAHQALgBSAGUAcABsAGEAYwBlACgAJABrACwAJABtAGEAcABbACQAawBdACkAIAB9AAoAJABuAD0AJAB0AC4ATgBvAHIAbQBhAGwAaQB6AGUAKABbAFQAZQB4AHQALgBOAG8AcgBtAGEAbABpAHoAYQB0AGkAbwBuAEYAbwByAG0AXQA6ADoARgBvAHIAbQBEACkACgAkAHMAYgA9AE4AZQB3AC0ATwBiAGoAZQBjAHQAIABUAGUAeAB0AC4AUwB0AHIAaQBuAGcAQgB1AGkAbABkAGUAcgAKAGYAbwByAGUAYQBjAGgAKAAkAGMAIABpAG4AIAAkAG4ALgBUAG8AQwBoAGEAcgBBAHIAcgBhAHkAKAApACkAewAKACAAIABpAGYAKABbAEcAbABvAGIAYQBsAGkAegBhAHQAaQBvAG4ALgBDAGgAYQByAFUAbgBpAGMAbwBkAGUASQBuAGYAbwBdADoAOgBHAGUAdABVAG4AaQBjAG8AZABlAEMAYQB0AGUAZwBvAHIAeQAoACQAYwApACAALQBuAGUAIABbAEcAbABvAGIAYQBsAGkAegBhAHQAaQBvAG4ALgBVAG4AaQBjAG8AZABlAEMAYQB0AGUAZwBvAHIAeQBdADoAOgBOAG8AbgBTAHAAYQBjAGkAbgBnAE0AYQByAGsAKQB7ACAAWwB2AG8AaQBkAF0AJABzAGIALgBBAHAAcABlAG4AZAAoACQAYwApACAAfQAKAH0ACgAkAG8AdQB0AD0AJABzAGIALgBUAG8AUwB0AHIAaQBuAGcAKAApAAoAJABvAHUAdAA9AFsAcgBlAGcAZQB4AF0AOgA6AFIAZQBwAGwAYQBjAGUAKAAkAG8AdQB0ACwAJwBbAF4AXAB4ADAAMAAtAFwAeAA3AEYAXQAnACwAJwA/ACcAKQAKACQAbwB1AHQAPQAkAG8AdQB0AC4AUgBlAHAAbABhAGMAZQAoACcAcwBlAHQAIAAiAEEAUwBDAEkASQA9ADAAIgAnACwAJwBzAGUAdAAgACIAQQBTAEMASQBJAD0AMQAiACcAKQAKAFsASQBPAC4ARgBpAGwAZQBdADoAOgBXAHIAaQB0AGUAQQBsAGwAVABlAHgAdAAoACQAZABzAHQALAAkAG8AdQB0ACwAKABOAGUAdwAtAE8AYgBqAGUAYwB0ACAAVABlAHgAdAAuAFUAVABGADgARQBuAGMAbwBkAGkAbgBnACgAJABmAGEAbABzAGUAKQApACkACgA="
 set "DESTINO=MENU"
 set "VOLTAR=MENU"
 set "PASSO=0"
@@ -43,9 +45,11 @@ echo   [1] Começar do início          [6] Como desfazer (remover apps / voltar
 echo   [2] Continuar de onde parei    [7] Abrir links oficiais
 echo   [3] Ir para um passo/console   [8] Ferramentas ADB (criar pastas, instalar APK, enviar jogos)
 echo   [4] Requisitos e downloads     [9] Apagar o progresso salvo
-echo   [5] Erros comuns               [0] Sair
+echo   [5] Erros comuns               [A] Modo sem acentos (texto com caracteres estranhos)
+echo                                  [0] Sair
 echo.
-choice /c 1234567890 /n /m "   Escolha uma opção: "
+choice /c 1234567890A /n /m "   Escolha uma opção: "
+if errorlevel 11 goto SEM_ACENTOS
 if errorlevel 10 goto SAIR
 if errorlevel 9 goto APAGAR_PROGRESSO
 if errorlevel 8 (set "VOLTAR=MENU" & goto FERRAMENTAS)
@@ -81,7 +85,11 @@ echo     8  CitraVR: configurar e jogar (Touch controllers) STREMIO
 echo    NDS                                                17  Stremio: instalar
 echo     9  melonDS: instalar, jogos, controles            18  Stremio: conta, add-ons e reprodução
 echo    PS2                                                19  Stremio: dicas para VR (janela, áudio, legendas)
-echo    10  NetherSX2: instalar, BIOS, jogos, desempenho   20  Verificação final
+echo    10  NetherSX2: instalar, BIOS, jogos, desempenho   26  Verificação final
+echo    MAIS EMULADORES                                   EXTRAS
+echo    20  RetroArch (NES/SNES/MD/GBA/PS1/N64/DC/Saturn)     23  Streaming completo do PC (Sunshine + Moonlight)
+echo    21  PPSSPP (PSP)                                      24  Backup automático de saves (tarefa agendada)
+echo    22  Dolphin (GameCube/Wii)                            25  Ícones, capas e atalhos (Lightning Launcher/Daijishō)
 echo.
 set "N="
 set /p "N=   Digite o número do passo (1-%TOTAL%) ou ENTER para voltar: "
@@ -177,13 +185,15 @@ echo       ROMs\NDS\        (.nds)
 echo       ROMs\PS2\        (.iso / .chd / .cso)
 echo       ROMs\Xbox\       (.iso / .xiso)
 echo       ROMs\Switch\     (.nsp / .xci)
+echo       ROMs\PSP\  ROMs\GC\  ROMs\Wii\          (PPSSPP e Dolphin - passos 21 e 22)
+echo       ROMs\Retro\NES SNES MD GBA PS1 N64 DC Saturn   (RetroArch - passo 20)
 echo       Saves_Backup\    (cópias de saves)
 echo.
 call :ACHAR_ADB
 if not defined ADB goto PASSO_4_MANUAL
 choice /c SN /n /m "   [S] Criar as pastas agora via ADB    [N] Vou criar manualmente : "
 if errorlevel 2 goto PASSO_4_MANUAL
-"%ADB%" shell "mkdir -p %QROOT%/BIOS %QROOT%/ROMs/3DS %QROOT%/ROMs/NDS %QROOT%/ROMs/PS2 %QROOT%/ROMs/Xbox %QROOT%/ROMs/Switch %QROOT%/Saves_Backup"
+"%ADB%" shell "mkdir -p %QROOT%/BIOS %QROOT%/ROMs/3DS %QROOT%/ROMs/NDS %QROOT%/ROMs/PS2 %QROOT%/ROMs/Xbox %QROOT%/ROMs/Switch %QROOT%/Saves_Backup %QROOT%/ROMs/PSP %QROOT%/ROMs/GC %QROOT%/ROMs/Wii %QROOT%/ROMs/Retro/NES %QROOT%/ROMs/Retro/SNES %QROOT%/ROMs/Retro/MD %QROOT%/ROMs/Retro/GBA %QROOT%/ROMs/Retro/PS1 %QROOT%/ROMs/Retro/N64 %QROOT%/ROMs/Retro/DC %QROOT%/ROMs/Retro/Saturn"
 echo.
 echo   Conferindo:
 "%ADB%" shell "ls -la %QROOT% %QROOT%/ROMs"
@@ -583,9 +593,168 @@ call :AGUARDAR "Pressione qualquer tecla para continuar"
 call :FIM_PASSO 19
 goto %DESTINO%
 
+rem ============================================================================
+rem  BLOCO I - MAIS EMULADORES
+rem ============================================================================
+
 :PASSO_20
 cls
-call :CABECALHO 20 "Verificação final"
+call :CABECALHO 20 "RetroArch: NES, SNES, Mega Drive, GBA, PS1, N64, Dreamcast, Saturn"
+echo   INSTALAR
+echo   1. Baixe o APK "RetroArch_aarch64.apk" (64 bits) em https://buildbot.libretro.com/stable/  → versão mais recente
+echo      → android → RetroArch_aarch64.apk   (ou https://www.retroarch.com/?page=platforms → Android).
+echo   2. Instale pelo SideQuest / opção 8. Abra uma vez (Fontes desconhecidas) e aceite as permissões.
+echo.
+echo   CORES (o "emulador" de cada console, baixado dentro do RetroArch: Menu → Online Updater → Core Downloader)
+echo      NES: Mesen ou Nestopia      SNES: Snes9x        Mega Drive: Genesis Plus GX     GBA: mGBA
+echo      PS1: SwanStation (DuckStation) ou Beetle PSX HW    N64: Mupen64Plus-Next   Dreamcast: Flycast   Saturn: Beetle Saturn ou Kronos
+echo      Depois: Online Updater → "Update Assets", "Update Core Info Files", "Update Databases".
+echo.
+echo   BIOS (vão em /sdcard/RetroArch/system - copie do seu console; opção 8 → Enviar → destino /sdcard/RetroArch/system)
+echo      PS1: scph5500.bin (JP) scph5501.bin (US) scph5502.bin (EU)   Saturn: sega_101.bin, mpr-17933.bin
+echo      Dreamcast: dc/dc_boot.bin e dc/dc_flash.bin (Flycast roda muitos jogos sem BIOS)   Confira os hashes: opção 8 → [9].
+echo.
+echo   JOGOS: %QROOT%/ROMs/Retro/^<console^>. No RetroArch: Menu → "Import Content" / "Scan Directory" → escolha a pasta
+echo      → as playlists por console aparecem no menu esquerdo.
+echo.
+echo   CONTROLE: Settings → Input → Port 1 Controls → "Set All Controls" com o controle Bluetooth. Hotkeys: Settings → Input → Hotkeys
+echo      (Menu Toggle no botão Home/Guide; Save State/Load State em L3/R3).
+echo   VÍDEO: Settings → Video → Driver "vulkan" (reinicie o app); Output → resolução nativa; Scaling "Integer" opcional.
+echo   Shaders: Quick Menu → Shaders → "crt-royale-fast" ou "lcd3x" para GBA.
+echo.
+choice /c SN /n /m "   [S] Enviar uma pasta de jogos Retro agora via ADB    [N] Pular : "
+if not errorlevel 2 call :ENVIAR "%QROOT%/ROMs/Retro"
+call :AGUARDAR "Pressione qualquer tecla quando um jogo tiver aberto no RetroArch"
+call :FIM_PASSO 20
+goto %DESTINO%
+
+:PASSO_21
+cls
+call :CABECALHO 21 "PPSSPP (PSP): roda muito bem no Quest 3S"
+echo   1. Baixe o APK em https://www.ppsspp.org/download/  (Android → "PPSSPP" livre, arm64) ou
+echo      https://github.com/hrydgard/ppsspp/releases/latest. Instale pelo SideQuest / opção 8.
+echo   2. Jogos: seus UMDs em .iso ou .cso → %QROOT%/ROMs/PSP. Não precisa de BIOS.
+echo   3. Abra PPSSPP → "Games" → "Browse..." → Emuladores/ROMs/PSP. Toque no jogo.
+echo   4. Configurações → Gráficos: Backend "Vulkan"; Rendering resolution "3x PSP" (o 3S aguenta 3x-4x);
+echo      Frame skipping OFF; Texture filtering "Auto"; "Upscale type" xBRZ 2x opcional; "Hardware transform" ON.
+echo   5. Configurações → Controles → "Control mapping" → mapeie o controle Bluetooth. "Enable touch controls" OFF.
+echo   6. Saves ficam em Android/data/org.ppsspp.ppsspp/files/PSP/SAVEDATA (backup: passo 24).
+echo.
+choice /c SN /n /m "   [S] Enviar jogos de PSP agora via ADB    [N] Pular : "
+if not errorlevel 2 call :ENVIAR "%QROOT%/ROMs/PSP"
+call :AGUARDAR "Pressione qualquer tecla quando um jogo de PSP tiver aberto"
+call :FIM_PASSO 21
+goto %DESTINO%
+
+:PASSO_22
+cls
+call :CABECALHO 22 "Dolphin (GameCube / Wii): jogos leves rodam"
+echo   1. Baixe o APK em https://dolphin-emu.org/download/  (Android, versão "beta"/estável mais recente). Instale.
+echo   2. Jogos: seus discos em .rvz (menor) ou .iso → %QROOT%/ROMs/GC e %QROOT%/ROMs/Wii. Não precisa de BIOS.
+echo   3. Abra Dolphin → "+" → escolha a pasta ROMs/GC (e depois ROMs/Wii). A lista aparece com capas.
+echo   4. Configurações → Gráficos: Backend "Vulkan"; Internal Resolution "1x" (suba para 2x em jogos leves);
+echo      "Compile shaders before starting" ON; "Asynchronous ubershaders" ON reduz engasgos.
+echo   5. Configurações → Controllers → GameCube Controller 1 → "Emulated" → mapeie o controle Bluetooth.
+echo      Wii: "Wii Remote 1" → "Emulated Wii Remote" → mapeie; jogos que exigem apontar (IR) são difíceis sem Wiimote.
+echo   6. Se ficar lento: Configurações → Advanced → "CPU Clock Override" 80%%; desligue "Enable Cheats"; resolução 1x.
+echo.
+choice /c SN /n /m "   [S] Enviar jogos de GC/Wii agora via ADB    [N] Pular : "
+if not errorlevel 2 call :ENVIAR "%QROOT%/ROMs/GC"
+call :AGUARDAR "Pressione qualquer tecla quando um jogo tiver aberto no Dolphin"
+call :FIM_PASSO 22
+goto %DESTINO%
+
+rem ============================================================================
+rem  BLOCO J - EXTRAS
+rem ============================================================================
+
+:PASSO_23
+cls
+call :CABECALHO 23 "Streaming completo do PC: Sunshine (PC) + Moonlight (Quest)"
+echo   Serve para Xbox 360 no Xenia, jogos de PC, Game Pass PC e qualquer coisa que o headset não roda sozinho.
+echo   Latência típica em Wi-Fi 5 GHz/6 GHz no mesmo cômodo: 20-40 ms. Cabo de rede no PC ajuda muito.
+echo.
+echo   NO PC (Windows):
+echo   1. Instalar o Sunshine (servidor, gratuito):
+echo        winget install -e --id LizardByte.Sunshine      (ou https://github.com/LizardByte/Sunshine/releases/latest)
+choice /c SN /n /m "   [S] Instalar o Sunshine agora pelo winget    [N] Já tenho / vou baixar : "
+if not errorlevel 2 (winget install -e --id LizardByte.Sunshine --accept-source-agreements --accept-package-agreements)
+echo   2. Abra https://localhost:47990 no navegador do PC → crie usuário/senha do Sunshine.
+echo   3. Em "Applications" adicione os jogos/emuladores (ex.: Xenia: comando = caminho do xenia.exe; "Desktop" já vem).
+echo   4. Placa de vídeo: NVIDIA (NVENC), AMD (AMF) ou Intel (QSV) - o Sunshine detecta. Configuração → Audio/Video: HEVC ON.
+echo.
+echo   NO QUEST:
+echo   5. Baixe o Moonlight: https://github.com/moonlight-stream/moonlight-android/releases/latest → app-...-arm64-v8a.apk (ou .apk único).
+echo      Instale pelo SideQuest / opção 8. Abra (Fontes desconhecidas).
+echo   6. O PC aparece na lista (mesma rede). Toque → mostra um PIN → no PC abra Sunshine → aba "PIN" → digite → Pair.
+echo   7. Moonlight → Configurações: Resolução 1920x1080 (ou 2560x1440), 90 fps, Bitrate 30-50 Mbps, Codec HEVC,
+echo      "Frame pacing" ON, "Video decoder" Hardware. Controle Bluetooth conectado ao Quest é passado ao PC.
+echo   8. Toque em "Desktop" ou no jogo. A tela do PC vira um painel; redimensione como telão.
+echo.
+echo   Alternativas: Virtual Desktop (loja Meta, pago; mais fácil, também faz VR de PC) e Steam Link (loja Meta, grátis, só Steam).
+echo.
+call :AGUARDAR "Pressione qualquer tecla quando o Moonlight mostrar o desktop do PC"
+call :FIM_PASSO 23
+goto %DESTINO%
+
+:PASSO_24
+cls
+call :CABECALHO 24 "Backup automático de saves: tarefa agendada no Windows (a cada hora, se o headset estiver no cabo)"
+echo   Cria o script  %PASTA%backup_saves_quest.bat  e uma tarefa do Agendador do Windows que o roda de hora em hora.
+echo   O script só faz algo se o headset estiver conectado e autorizado; senão termina em silêncio.
+echo   Destino: %USERPROFILE%\Desktop\Quest_Saves_Backup\^<pacote^>\  (sobrescreve com a versão mais nova).
+echo   Pastas copiadas: dados de CitraVR, melonDS, NetherSX2, Eden, PPSSPP, Dolphin, RetroArch (saves/states/system).
+echo.
+call :ACHAR_ADB
+if not defined ADB goto PASSO_24_FIM
+choice /c SNR /n /m "   [S] Criar script + tarefa agora    [N] Pular    [R] Remover a tarefa agendada : "
+if errorlevel 3 (schtasks /delete /tn "QuestSavesBackup" /f & goto PASSO_24_FIM)
+if errorlevel 2 goto PASSO_24_FIM
+set "BKS=%PASTA%backup_saves_quest.bat"
+>"%BKS%" echo @echo off
+>>"%BKS%" echo set "ADB=%ADB%"
+>>"%BKS%" echo set "DST=%%USERPROFILE%%\Desktop\Quest_Saves_Backup"
+>>"%BKS%" echo "%%ADB%%" get-state ^>nul 2^>^&1 ^|^| exit /b 0
+>>"%BKS%" echo if not exist "%%DST%%" mkdir "%%DST%%"
+>>"%BKS%" echo for %%%%S in (org.citra.citra_emu me.magnum.melonds xyz.aethersx2.android dev.eden.eden_emulator org.ppsspp.ppsspp org.dolphinemu.dolphinemu com.retroarch) do "%%ADB%%" pull /sdcard/Android/data/%%%%S/files "%%DST%%\%%%%S" ^>nul 2^>^&1
+>>"%BKS%" echo "%%ADB%%" pull /sdcard/RetroArch/saves "%%DST%%\RetroArch\saves" ^>nul 2^>^&1
+>>"%BKS%" echo "%%ADB%%" pull /sdcard/RetroArch/states "%%DST%%\RetroArch\states" ^>nul 2^>^&1
+>>"%BKS%" echo echo %%DATE%% %%TIME%% backup ok^>^>"%%DST%%\log.txt"
+echo   Script criado. Testando uma vez agora (pode demorar na primeira execução)...
+call "%BKS%"
+echo   Registrando a tarefa agendada "QuestSavesBackup" (a cada 1 hora)...
+schtasks /create /tn "QuestSavesBackup" /tr "\"%BKS%\"" /sc hourly /mo 1 /f
+echo   Para conferir: Agendador de Tarefas → Biblioteca → QuestSavesBackup.  Log: Desktop\Quest_Saves_Backup\log.txt
+:PASSO_24_FIM
+echo.
+call :AGUARDAR "Pressione qualquer tecla para continuar"
+call :FIM_PASSO 24
+goto %DESTINO%
+
+:PASSO_25
+cls
+call :CABECALHO 25 "Ícones, capas e atalhos diretos para jogos"
+echo   ÍCONES POR APP (Lightning Launcher)
+echo   1. No launcher, segure o gatilho sobre um app → "Icon" / "Custom icon" → escolha uma imagem (png/jpg) do headset.
+echo      Coloque as imagens em /sdcard/Pictures/Icones (opção 8 → Enviar → destino manual). Sugestão: 512x512.
+echo   2. "Rename" para nomes curtos (ex.: "PS2", "Switch"); "Hide" para esconder apps de sistema que não usa.
+echo   3. Grupos com ícone: "Emuladores", "Streaming", "Vídeo". Arraste a ordem.
+echo.
+echo   ATALHOS DIRETOS PARA JOGOS (com capas) - frontend Daijishō
+echo   4. Baixe o Daijishō (frontend Android de emulação): https://github.com/TapiocaFox/Daijishou/releases/latest → .apk
+echo      Instale pelo SideQuest / opção 8. Abra (Fontes desconhecidas).
+echo   5. "Settings" → "Platforms" → adicione cada console → "Player" = o emulador instalado (melonDS, NetherSX2, PPSSPP,
+echo      Dolphin, RetroArch + core). "Paths" → aponte Emuladores/ROMs/^<console^>. Ele baixa capas e metadados sozinho.
+echo   6. Na tela inicial ficam os jogos com capa; tocar abre direto no emulador certo. Funciona em janela 2D no Quest.
+echo      Limitação: CitraVR (VR nativo) não é lançado pelo Daijishō; abra o CitraVR direto.
+echo.
+call :AGUARDAR "Pressione qualquer tecla para continuar"
+call :FIM_PASSO 25
+goto %DESTINO%
+
+:PASSO_26
+cls
+call :CABECALHO 26 "Verificação final"
 echo   CHECKLIST:
 echo     [ ] Lightning Launcher abre e lista todos os apps (oficiais + Fontes desconhecidas).
 echo     [ ] Controle Bluetooth aparece como Conectado e funciona em pelo menos um emulador.
@@ -595,14 +764,16 @@ echo     [ ] NetherSX2 abre um jogo de PS2 com a BIOS do seu console.
 echo     [ ] (Opcional) X1 BOX abre a tela do Xbox; app Xbox Cloud Gaming instalado da loja.
 echo     [ ] (Opcional) Eden abre um jogo leve de Switch.
 echo     [ ] Stremio reproduz um vídeo.
+echo     [ ] (Opcional) RetroArch, PPSSPP e Dolphin abrem um jogo cada.
+echo     [ ] (Opcional) Moonlight conecta ao PC com Sunshine.   [ ] Tarefa agendada de backup criada (passo 24).
 echo     [ ] Você sabe onde ficam os saves e fez o primeiro backup (passo 16).
 echo.
 echo   Pacotes instalados detectados via ADB (se conectado):
 call :ACHAR_ADB
-if defined ADB "%ADB%" shell "pm list packages | grep -iE 'citra|melonds|aethersx2|nethersx2|xemu|x1box|eden|citron|sudachi|stremio|lightning|threethan'" 2>nul
+if defined ADB "%ADB%" shell "pm list packages | grep -iE 'citra|melonds|aethersx2|nethersx2|xemu|x1box|eden|citron|sudachi|stremio|lightning|threethan|retroarch|ppsspp|dolphin|moonlight|daijisho'" 2>nul
 echo.
 call :AGUARDAR "Pressione qualquer tecla para concluir"
-call :FIM_PASSO 20
+call :FIM_PASSO 26
 goto %DESTINO%
 
 :CONCLUIDO
@@ -643,6 +814,12 @@ echo   X1 BOX / xemu (Xbox) .... https://github.com/phobos665/xemu-android/relea
 echo   Eden (Switch) ........... https://github.com/eden-emulator/Releases/releases/latest
 echo   Turnip GPU drivers ...... https://github.com/K11MCH1/AdrenoToolsDrivers/releases
 echo   Stremio ................. https://www.stremio.com/downloads   (Android → arm64-v8a)
+echo   RetroArch ............... https://buildbot.libretro.com/stable/  (android → RetroArch_aarch64.apk)
+echo   PPSSPP .................. https://github.com/hrydgard/ppsspp/releases/latest
+echo   Dolphin ................. https://dolphin-emu.org/download/
+echo   Moonlight / Sunshine .... https://github.com/moonlight-stream/moonlight-android/releases/latest  /  https://github.com/LizardByte/Sunshine/releases/latest
+echo   Daijishō ................ https://github.com/TapiocaFox/Daijishou/releases/latest
+echo   chdman (MAME) ........... https://www.mamedev.org/release.html
 echo   Xbox Cloud Gaming ....... app "Xbox" na Meta Horizon Store (dentro do headset)
 echo   SideQuest ............... https://sidequestvr.com/setup-howto
 echo.
@@ -744,10 +921,16 @@ echo   [5] Baixar (pull) uma pasta do headset para o PC (saves, etc.)
 echo   [6] Listar pacotes instalados (emuladores e apps sideloaded)
 echo   [7] Desinstalar um app por nome de pacote
 echo   [8] Apagar a pasta %QROOT% do headset (CUIDADO)
+echo   [9] Verificar hashes MD5 e tamanhos de BIOS / keys (detecta dump ruim)
+echo   [A] Converter ISO/CUE para CHD com o chdman (economiza espaço)
+echo   [B] Perfis de desempenho via ADB (CPU/GPU/Hz) para emulação
 echo   [0] Voltar
 echo.
-choice /c 123456780 /n /m "   Escolha: "
-if errorlevel 9 goto MENU
+choice /c 123456789AB0 /n /m "   Escolha: "
+if errorlevel 12 goto MENU
+if errorlevel 11 goto FERR_PERF
+if errorlevel 10 goto FERR_CHD
+if errorlevel 9 goto FERR_HASH
 if errorlevel 8 goto FERR_APAGAR
 if errorlevel 7 goto FERR_DESINSTALAR
 if errorlevel 6 goto FERR_LISTAR
@@ -760,7 +943,7 @@ call :AGUARDAR "Pressione qualquer tecla"
 goto FERRAMENTAS
 
 :FERR_PASTAS
-"%ADB%" shell "mkdir -p %QROOT%/BIOS %QROOT%/ROMs/3DS %QROOT%/ROMs/NDS %QROOT%/ROMs/PS2 %QROOT%/ROMs/Xbox %QROOT%/ROMs/Switch %QROOT%/Saves_Backup"
+"%ADB%" shell "mkdir -p %QROOT%/BIOS %QROOT%/ROMs/3DS %QROOT%/ROMs/NDS %QROOT%/ROMs/PS2 %QROOT%/ROMs/Xbox %QROOT%/ROMs/Switch %QROOT%/Saves_Backup %QROOT%/ROMs/PSP %QROOT%/ROMs/GC %QROOT%/ROMs/Wii %QROOT%/ROMs/Retro/NES %QROOT%/ROMs/Retro/SNES %QROOT%/ROMs/Retro/MD %QROOT%/ROMs/Retro/GBA %QROOT%/ROMs/Retro/PS1 %QROOT%/ROMs/Retro/N64 %QROOT%/ROMs/Retro/DC %QROOT%/ROMs/Retro/Saturn"
 "%ADB%" shell "ls -la %QROOT% %QROOT%/ROMs"
 call :AGUARDAR "Pressione qualquer tecla"
 goto FERRAMENTAS
@@ -837,6 +1020,100 @@ echo   Apagado.
 call :AGUARDAR "Pressione qualquer tecla"
 goto FERRAMENTAS
 
+:FERR_HASH
+echo.
+set "HDIR="
+set /p "HDIR=   Pasta no PC com as BIOS/keys (arraste ou cole o caminho): "
+set "HDIR=%HDIR:"=%"
+if "%HDIR%"=="" goto FERRAMENTAS
+if not exist "%HDIR%\" (echo   Pasta não encontrada. & call :AGUARDAR "Pressione qualquer tecla" & goto FERRAMENTAS)
+echo.
+echo   Calculando MD5 (pode demorar em arquivos grandes)...
+powershell -NoProfile -Command "Get-ChildItem -LiteralPath '%HDIR%' -File | ForEach-Object { '   {0,-34} {1,14:N0} bytes  MD5 {2}' -f $_.Name,$_.Length,(Get-FileHash -LiteralPath $_.FullName -Algorithm MD5).Hash }"
+echo.
+echo   VALORES ESPERADOS (dumps originais; fonte: docs libretro/PCSX2):
+echo     PS1  scph5500.bin (JP) 524.288 bytes  MD5 8DD7D5296A650FAC7319BCE665A6A53C
+echo     PS1  scph5501.bin (US) 524.288 bytes  MD5 490F666E1AFB15B7362B406ED1CEA246
+echo     PS1  scph5502.bin (EU) 524.288 bytes  MD5 32736F17079D0B2B7024407C39BD3050
+echo     PS2  qualquer SCPH-xxxxx.bin: 4.194.304 bytes (4 MB); MD5 varia por modelo/região - confira em pcsx2.net/docs
+echo     Saturn  sega_101.bin 524.288 bytes MD5 85EC9CA47D8F6807718151CBCCA8B964   mpr-17933.bin 524.288 bytes MD5 3240872C70984B6CBFDA1586CAB68DBE
+echo     Dreamcast  dc_boot.bin 2.097.152 bytes MD5 E10C53C2F8B90BAB96EAD2D368858623   dc_flash.bin 131.072 bytes MD5 0A93F7940C455905BEA6E392DFDE92A4
+echo     Xbox  mcpx_1.0.bin 512 bytes   Complex_4627.bin 1.048.576 bytes   xbox_hdd.qcow2 tamanho variável
+echo     Switch prod.keys: arquivo de texto com linhas "master_key_00 = ..." ; firmware: pasta com dezenas de .nca
+if exist "%HDIR%\prod.keys" (findstr /c:"master_key_0" "%HDIR%\prod.keys" >nul && echo   prod.keys: contém master_key - OK || echo   prod.keys: NÃO contém master_key - arquivo inválido)
+echo.
+call :AGUARDAR "Pressione qualquer tecla"
+goto FERRAMENTAS
+
+:FERR_CHD
+echo.
+set "CHD="
+for /f "delims=" %%C in ('where chdman 2^>nul') do if not defined CHD set "CHD=%%C"
+if not defined CHD if exist "%PASTA%tools\chdman.exe" set "CHD=%PASTA%tools\chdman.exe"
+if not defined CHD if exist "%PASTA%chdman.exe" set "CHD=%PASTA%chdman.exe"
+if defined CHD goto FERR_CHD_RUN
+echo   chdman.exe não encontrado. Ele vem dentro do MAME (oficial):
+echo     1. Abra https://www.mamedev.org/release.html → baixe o "mame0xxxb_64bit.exe" (é um auto-extraível).
+echo     2. Extraia em uma pasta temporária e copie SÓ o chdman.exe para:  %PASTA%tools\chdman.exe
+echo     3. Volte aqui e repita.
+if not exist "%PASTA%tools" mkdir "%PASTA%tools"
+start "" "https://www.mamedev.org/release.html"
+call :AGUARDAR "Pressione qualquer tecla"
+goto FERRAMENTAS
+:FERR_CHD_RUN
+echo   chdman: %CHD%
+set "CDIR="
+set /p "CDIR=   Pasta no PC com os jogos (.cue/.bin, .gdi, .iso): "
+set "CDIR=%CDIR:"=%"
+if "%CDIR%"=="" goto FERRAMENTAS
+if not exist "%CDIR%\" (echo   Pasta não encontrada. & call :AGUARDAR "Pressione qualquer tecla" & goto FERRAMENTAS)
+echo   Tipo:  [1] CD (PS1, Saturn, Dreamcast .cue/.gdi/.iso)    [2] DVD (PS2 .iso)
+choice /c 12 /n /m "   Escolha: "
+if errorlevel 2 goto FERR_CHD_DVD
+for %%F in ("%CDIR%\*.cue" "%CDIR%\*.gdi" "%CDIR%\*.iso") do (echo   -- %%~nxF & "%CHD%" createcd -i "%%F" -o "%%~dpnF.chd")
+goto FERR_CHD_FIM
+:FERR_CHD_DVD
+for %%F in ("%CDIR%\*.iso") do (echo   -- %%~nxF & "%CHD%" createdvd -i "%%F" -o "%%~dpnF.chd")
+:FERR_CHD_FIM
+echo.
+echo   Concluído. Os .chd ficaram ao lado dos originais. Teste um no emulador antes de apagar os originais.
+echo   NetherSX2, RetroArch (Beetle PSX/SwanStation/Flycast/Beetle Saturn) e Dolphin (.rvz, não CHD) aceitam CHD.
+call :AGUARDAR "Pressione qualquer tecla"
+goto FERRAMENTAS
+
+:FERR_PERF
+echo.
+echo   PERFIS DE DESEMPENHO (setprop; voltam ao padrão ao reiniciar o headset)
+echo   [1] Emulação pesada (PS2 / Switch / Dolphin): CPU e GPU nível 4, 72 Hz
+echo   [2] Equilibrado (3DS / PSP / NDS): CPU e GPU nível 3, 90 Hz
+echo   [3] Padrão do sistema (automático)
+echo   [0] Voltar
+choice /c 1230 /n /m "   Escolha: "
+if errorlevel 4 goto FERRAMENTAS
+if errorlevel 3 ("%ADB%" shell "setprop debug.oculus.cpuLevel '' ; setprop debug.oculus.gpuLevel '' ; setprop debug.oculus.refreshRate ''" & goto FERR_PERF_OK)
+if errorlevel 2 ("%ADB%" shell "setprop debug.oculus.cpuLevel 3 ; setprop debug.oculus.gpuLevel 3 ; setprop debug.oculus.refreshRate 90" & goto FERR_PERF_OK)
+"%ADB%" shell "setprop debug.oculus.cpuLevel 4 ; setprop debug.oculus.gpuLevel 4 ; setprop debug.oculus.refreshRate 72"
+:FERR_PERF_OK
+echo   Aplicado. Valores atuais:
+"%ADB%" shell "getprop | grep -E 'debug.oculus.(cpuLevel|gpuLevel|refreshRate)'"
+call :AGUARDAR "Pressione qualquer tecla"
+goto FERR_PERF
+
+:SEM_ACENTOS
+cls
+echo.
+echo   MODO SEM ACENTOS
+echo   Gera uma cópia deste guia só com caracteres ASCII (sem acentos; setas viram -^>) e abre a cópia.
+if "%ASCII%"=="1" (echo   Esta já é a versão sem acentos. & call :AGUARDAR "Pressione qualquer tecla" & goto MENU)
+set "SA_SRC=%~f0"
+set "SA_DST=%~dpn0_sem_acentos.bat"
+powershell -NoProfile -ExecutionPolicy Bypass -EncodedCommand %PSB64%
+if not exist "%SA_DST%" (echo   Falha ao gerar a cópia. & call :AGUARDAR "Pressione qualquer tecla" & goto MENU)
+echo   Gerado: %SA_DST%
+echo   Abrindo a versão sem acentos e fechando esta...
+start "" cmd /c "%SA_DST%"
+goto SAIR
+
 :APAGAR_PROGRESSO
 if exist "%PROG%" del /q "%PROG%"
 set "PASSO=0"
@@ -873,6 +1150,12 @@ set /p "ORIG=   Pasta no PC com os arquivos (arraste a pasta para cá ou cole o 
 set "ORIG=%ORIG:"=%"
 if "%ORIG%"=="" exit /b
 if not exist "%ORIG%\" (echo   Pasta não encontrada. & exit /b)
+set "SZKB=" & set "FREEKB="
+for /f "usebackq delims=" %%K in (`powershell -NoProfile -Command "[int64]((Get-ChildItem -LiteralPath '%ORIG%' -Recurse -File ^| Measure-Object Length -Sum).Sum/1KB)"`) do set "SZKB=%%K"
+for /f "usebackq skip=1 tokens=4" %%K in (`call "%ADB%" shell df /sdcard 2^>nul`) do if not defined FREEKB set "FREEKB=%%K"
+if defined SZKB if defined FREEKB (set /a SZMB=%SZKB%/1024 & set /a FREEMB=%FREEKB%/1024)
+if defined SZKB if defined FREEKB echo   Tamanho da pasta: %SZMB% MB   Livre no headset: %FREEMB% MB
+if defined SZKB if defined FREEKB if %SZKB% GTR %FREEKB% (echo   NÃO CABE: libere espaço no headset ou envie menos jogos. & exit /b)
 echo   Enviando o CONTEÚDO de "%ORIG%" para %~1 ... (barra de progresso do adb abaixo; pode demorar)
 "%ADB%" shell "mkdir -p %~1"
 "%ADB%" push "%ORIG%\." "%~1"

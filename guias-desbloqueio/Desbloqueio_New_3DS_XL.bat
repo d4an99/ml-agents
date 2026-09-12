@@ -15,7 +15,11 @@ rem ============================================================================
 
 set "PASTA=%~dp0"
 set "PROG=%PASTA%progresso_new3dsxl.txt"
-set "TOTAL=26"
+set "TOTAL=30"
+set "ASCII=0"
+set "LOG=%PASTA%log_new3dsxl.txt"
+set "PSB64=CgAkAHMAcgBjAD0AJABlAG4AdgA6AFMAQQBfAFMAUgBDADsAIAAkAGQAcwB0AD0AJABlAG4AdgA6AFMAQQBfAEQAUwBUAAoAJAB0AD0AWwBJAE8ALgBGAGkAbABlAF0AOgA6AFIAZQBhAGQAQQBsAGwAVABlAHgAdAAoACQAcwByAGMALABbAFQAZQB4AHQALgBFAG4AYwBvAGQAaQBuAGcAXQA6ADoAVQBUAEYAOAApAAoAJABtAGEAcAA9AEAAewAKACAAKABbAHMAdAByAGkAbgBnAF0AWwBjAGgAYQByAF0AMAB4ADIAMQA5ADIAKQA9ACcALQBeAD4AJwA7ACAAIAAgACMAIACSIQoAIAAoAFsAcwB0AHIAaQBuAGcAXQBbAGMAaABhAHIAXQAwAHgAMgAxADkANAApAD0AJwAgAG8AdQAgACcAOwAgACAAIwAgAJQhCgAgACgAWwBzAHQAcgBpAG4AZwBdAFsAYwBoAGEAcgBdADAAeAAyADYAMwAwACkAPQAnAFsAbQBlAG4AdQBdACcAOwAjACAAMCYKACAAKABbAHMAdAByAGkAbgBnAF0AWwBjAGgAYQByAF0AMAB4ADIANwAxADMAKQA9ACcATwBLACcAOwAgACAAIAAgACMAIAATJwoAIAAoACcA5WUsZycAKQA9ACcATgBpAGgAbwBuACAAKABKAGEAcABhAG8AKQAnADsACgAgACgAJwAtippbVzBqMEQwJwApAD0AJwBuAGEAbwAgAGQAZQBmAGkAbgBpAHIAJwA7AAoAIAAoACcAALNc1fy7ba0nACkAPQAnAEQAYQBlAGgAYQBuACAATQBpAG4AZwB1AGsAIAAoAEMAbwByAGUAaQBhACkAJwA7AAoAIAAoACcAJMEVyFjVwMkgAErFTMcnACkAPQAnAG4AYQBvACAAZABlAGYAaQBuAGkAcgAnAAoAfQAKAGYAbwByAGUAYQBjAGgAKAAkAGsAIABpAG4AIAAkAG0AYQBwAC4ASwBlAHkAcwApAHsAIAAkAHQAPQAkAHQALgBSAGUAcABsAGEAYwBlACgAJABrACwAJABtAGEAcABbACQAawBdACkAIAB9AAoAJABuAD0AJAB0AC4ATgBvAHIAbQBhAGwAaQB6AGUAKABbAFQAZQB4AHQALgBOAG8AcgBtAGEAbABpAHoAYQB0AGkAbwBuAEYAbwByAG0AXQA6ADoARgBvAHIAbQBEACkACgAkAHMAYgA9AE4AZQB3AC0ATwBiAGoAZQBjAHQAIABUAGUAeAB0AC4AUwB0AHIAaQBuAGcAQgB1AGkAbABkAGUAcgAKAGYAbwByAGUAYQBjAGgAKAAkAGMAIABpAG4AIAAkAG4ALgBUAG8AQwBoAGEAcgBBAHIAcgBhAHkAKAApACkAewAKACAAIABpAGYAKABbAEcAbABvAGIAYQBsAGkAegBhAHQAaQBvAG4ALgBDAGgAYQByAFUAbgBpAGMAbwBkAGUASQBuAGYAbwBdADoAOgBHAGUAdABVAG4AaQBjAG8AZABlAEMAYQB0AGUAZwBvAHIAeQAoACQAYwApACAALQBuAGUAIABbAEcAbABvAGIAYQBsAGkAegBhAHQAaQBvAG4ALgBVAG4AaQBjAG8AZABlAEMAYQB0AGUAZwBvAHIAeQBdADoAOgBOAG8AbgBTAHAAYQBjAGkAbgBnAE0AYQByAGsAKQB7ACAAWwB2AG8AaQBkAF0AJABzAGIALgBBAHAAcABlAG4AZAAoACQAYwApACAAfQAKAH0ACgAkAG8AdQB0AD0AJABzAGIALgBUAG8AUwB0AHIAaQBuAGcAKAApAAoAJABvAHUAdAA9AFsAcgBlAGcAZQB4AF0AOgA6AFIAZQBwAGwAYQBjAGUAKAAkAG8AdQB0ACwAJwBbAF4AXAB4ADAAMAAtAFwAeAA3AEYAXQAnACwAJwA/ACcAKQAKACQAbwB1AHQAPQAkAG8AdQB0AC4AUgBlAHAAbABhAGMAZQAoACcAcwBlAHQAIAAiAEEAUwBDAEkASQA9ADAAIgAnACwAJwBzAGUAdAAgACIAQQBTAEMASQBJAD0AMQAiACcAKQAKAFsASQBPAC4ARgBpAGwAZQBdADoAOgBXAHIAaQB0AGUAQQBsAGwAVABlAHgAdAAoACQAZABzAHQALAAkAG8AdQB0ACwAKABOAGUAdwAtAE8AYgBqAGUAYwB0ACAAVABlAHgAdAAuAFUAVABGADgARQBuAGMAbwBkAGkAbgBnACgAJABmAGEAbABzAGUAKQApACkACgA="
+set "PSSPEED=CgAkAGQAPQAkAGUAbgB2ADoAUwBEAEwAKwAnADoAXAAnAAoAJABmAD0ASgBvAGkAbgAtAFAAYQB0AGgAIAAkAGQAIAAnAHQAZQBzAHQAZQBfAHYAZQBsAG8AYwBpAGQAYQBkAGUALgB0AG0AcAAnAAoAJABtAGIAPQAyADAAMAAKACQAYgB1AGYAPQBOAGUAdwAtAE8AYgBqAGUAYwB0ACAAYgB5AHQAZQBbAF0AIAAoADEATQBCACkAOwAgACgATgBlAHcALQBPAGIAagBlAGMAdAAgAFIAYQBuAGQAbwBtACkALgBOAGUAeAB0AEIAeQB0AGUAcwAoACQAYgB1AGYAKQAKACQAcwB3AD0AWwBEAGkAYQBnAG4AbwBzAHQAaQBjAHMALgBTAHQAbwBwAHcAYQB0AGMAaABdADoAOgBTAHQAYQByAHQATgBlAHcAKAApAAoAJABmAHMAPQBbAEkATwAuAEYAaQBsAGUAXQA6ADoATwBwAGUAbgAoACQAZgAsACcAQwByAGUAYQB0AGUAJwAsACcAVwByAGkAdABlACcALAAnAE4AbwBuAGUAJwApAAoAZgBvAHIAKAAkAGkAPQAwADsAJABpACAALQBsAHQAIAAkAG0AYgA7ACQAaQArACsAKQB7ACAAJABmAHMALgBXAHIAaQB0AGUAKAAkAGIAdQBmACwAMAAsACQAYgB1AGYALgBMAGUAbgBnAHQAaAApACAAfQAKACQAZgBzAC4ARgBsAHUAcwBoACgAJAB0AHIAdQBlACkAOwAgACQAZgBzAC4AQwBsAG8AcwBlACgAKQA7ACAAJABzAHcALgBTAHQAbwBwACgAKQAKACQAdwA9AFsAbQBhAHQAaABdADoAOgBSAG8AdQBuAGQAKAAkAG0AYgAvACQAcwB3AC4ARQBsAGEAcABzAGUAZAAuAFQAbwB0AGEAbABTAGUAYwBvAG4AZABzACwAMQApAAoAJABzAHcAPQBbAEQAaQBhAGcAbgBvAHMAdABpAGMAcwAuAFMAdABvAHAAdwBhAHQAYwBoAF0AOgA6AFMAdABhAHIAdABOAGUAdwAoACkACgAkAGYAcwA9AFsASQBPAC4ARgBpAGwAZQBdADoAOgBPAHAAZQBuACgAJABmACwAJwBPAHAAZQBuACcALAAnAFIAZQBhAGQAJwAsACcATgBvAG4AZQAnACkAOwAgACQAcgA9AE4AZQB3AC0ATwBiAGoAZQBjAHQAIABiAHkAdABlAFsAXQAgACgAMQBNAEIAKQA7ACAAJAB0AG8AdAA9ADAACgB3AGgAaQBsAGUAKAAoACQAbgA9ACQAZgBzAC4AUgBlAGEAZAAoACQAcgAsADAALAAkAHIALgBMAGUAbgBnAHQAaAApACkAIAAtAGcAdAAgADAAKQB7ACAAJAB0AG8AdAArAD0AJABuACAAfQAKACQAZgBzAC4AQwBsAG8AcwBlACgAKQA7ACAAJABzAHcALgBTAHQAbwBwACgAKQAKACQAcgBkAD0AWwBtAGEAdABoAF0AOgA6AFIAbwB1AG4AZAAoACgAJAB0AG8AdAAvADEATQBCACkALwAkAHMAdwAuAEUAbABhAHAAcwBlAGQALgBUAG8AdABhAGwAUwBlAGMAbwBuAGQAcwAsADEAKQAKAFIAZQBtAG8AdgBlAC0ASQB0AGUAbQAgACQAZgAgAC0ARgBvAHIAYwBlAAoAIgAgACAAIABFAHMAYwByAGkAdABhACAAcwBlAHEAdQBlAG4AYwBpAGEAbAA6ACAAJAB3ACAATQBCAC8AcwAgACAAIABMAGUAaQB0AHUAcgBhACAAcwBlAHEAdQBlAG4AYwBpAGEAbAA6ACAAJAByAGQAIABNAEIALwBzACAAIAAgACgAYQByAHEAdQBpAHYAbwAgAGQAZQAgACQAbQBiACAATQBCACkAIgAKAGkAZgAoACQAdwAgAC0AbAB0ACAANQApAHsAIAAiACAAIAAgAEEAVgBJAFMATwA6ACAAZQBzAGMAcgBpAHQAYQAgAG0AdQBpAHQAbwAgAGwAZQBuAHQAYQAgAG8AdQAgAGMAYQByAHQAYQBvACAAZgBhAGwAcwBvAC8AZABlAGYAZQBpAHQAdQBvAHMAbwAuACAAUgBvAGQAZQAgAG8AIABIADIAdABlAHMAdAB3AC4AIgAgAH0AIABlAGwAcwBlAGkAZgAoACQAdwAgAC0AbAB0ACAAMQAwACkAewAgACIAIAAgACAATABlAG4AdABvACwAIABtAGEAcwAgAGYAdQBuAGMAaQBvAG4AYQAuACAAVQBtACAAYwBhAHIAdABhAG8AIABDAGwAYQBzAHMAZQAgADEAMAAvAEEAMQAgAHIAZQBhAGwAIABlAHMAYwByAGUAdgBlACAAMQA1AC0ANAAwACAATQBCAC8AcwAuACIAIAB9ACAAZQBsAHMAZQAgAHsAIAAiACAAIAAgAE8ASwAgAHAAYQByAGEAIABvACAAMwBEAFMALgAiACAAfQAKAA=="
 set "DESTINO=MENU"
 set "VOLTAR=MENU"
 set "PASSO=0"
@@ -46,10 +50,14 @@ echo   [5] Erros comuns e como corrigir
 echo   [6] Como desfazer (remover o CFW / restaurar NAND)
 echo   [7] Abrir links oficiais no navegador
 echo   [8] Apagar o progresso salvo
+echo   [9] Ferramentas do cartão SD (teste de velocidade, H2testw, migração para cartão maior)
+echo   [A] Modo sem acentos (use se o texto aparecer com caracteres estranhos)
 echo   [0] Sair
 echo.
-choice /c 123456780 /n /m "   Escolha uma opção: "
-if errorlevel 9 goto SAIR
+choice /c 1234567890A /n /m "   Escolha uma opção: "
+if errorlevel 11 goto SEM_ACENTOS
+if errorlevel 10 goto SAIR
+if errorlevel 9 goto FERR_SD
 if errorlevel 8 goto APAGAR_PROGRESSO
 if errorlevel 7 goto LINKS
 if errorlevel 6 goto DESFAZER
@@ -83,6 +91,8 @@ echo   10  Baixar os arquivos                          23  Finalizar: atualizaç
 echo   11  Copiar arquivos para o SD e conferir        24  Finalizar: Rosalina (DSP e relógio)
 echo   12  Colocar o SD no console (físico)            25  Finalizar: script "finalize" no GodMode9
 echo   13  Ligar e conectar ao Wi-Fi                   26  Backup da NAND no PC e verificação final
+echo   PÓS-INSTALAÇÃO:  27  Universal-Updater e game patching   28  Pretendo Network (online)
+echo                    29  Backup de saves com Checkpoint     30  Migrar para um cartão SD maior
 echo.
 set "N="
 set /p "N=   Digite o número do passo (1-%TOTAL%) ou ENTER para voltar: "
@@ -162,8 +172,9 @@ echo       apenas o local do slot SD/microSD muda (New 2DS XL: slot atrás da ta
 echo     - CTR/SPR/FTR (modelos antigos): use OUTRO método (safecerthax). Vá em 3ds.hacks.guide/get-started
 echo       e selecione "Old 3DS/2DS". Este guia NÃO serve para eles.
 echo.
-call :PERGUNTA "   Continuar mesmo assim?"
-if errorlevel 2 goto MENU
+choice /c 123 /n /m "   [1] Continuar (New 3DS / New 2DS XL)   [2] Ver o roteiro safecerthax para Old 3DS/2DS   [3] Menu : "
+if errorlevel 3 goto MENU
+if errorlevel 2 goto SAFECERTHAX
 call :FIM_PASSO 2
 goto %DESTINO%
 
@@ -420,6 +431,11 @@ echo     - Até 32 GB : Este Computador → botão direito no cartão → Format
 echo     - Acima de 32 GB: use a ferramenta "guiformat" (FAT32 Format, de Ridgecrop) com Allocation unit size = 32768.
 echo       Depois copie de volta o conteúdo do backup (passo 8) para o cartão.
 echo.
+choice /c SN /n /m "   [S] Testar a velocidade do cartão agora (200 MB, 1 min)    [N] Pular : "
+if not errorlevel 2 call :TESTE_VELOCIDADE
+echo.
+echo   Para detectar cartão FALSO (capacidade mentirosa) use o H2testw: https://www.heise.de/download/product/h2testw-50539
+echo   (grave o cartão inteiro; "Test finished without errors" = cartão real). Demora 1 h por 64 GB.
 call :AGUARDAR "Pressione qualquer tecla quando o cartão estiver em FAT32 com espaço suficiente"
 call :FIM_PASSO 9
 goto %DESTINO%
@@ -885,6 +901,130 @@ call :AGUARDAR "Pressione qualquer tecla quando as 4 verificações passarem"
 call :FIM_PASSO 26
 goto %DESTINO%
 
+rem ============================================================================
+rem  BLOCO D - PÓS-INSTALAÇÃO
+rem ============================================================================
+
+:PASSO_27
+cls
+call :CABECALHO 27 "Pós-instalação (1/4): Universal-Updater e game patching do Luma"
+echo   UNIVERSAL-UPDATER (loja de homebrew, já instalada pelo finalize)
+echo     1. No menu HOME abra "Universal-Updater". Precisa de Wi-Fi.
+echo     2. Aba de busca (lupa) → instale o que quiser. Recomendados:
+echo          Nimbus         (troca entre Nintendo Network e Pretendo - passo 28)
+echo          ftpd           (transferir arquivos pelo Wi-Fi sem tirar o cartão)
+echo          TWiLight Menu++ (roda jogos de DS/GBA/NES/SNES pelo cartão SD)
+echo          GodMode9 e Luma3DS (para atualizar depois: "Update" na própria loja)
+echo     3. Apps instalados aparecem no HOME após reiniciar ou como .3dsx no Homebrew Launcher.
+echo.
+echo   GAME PATCHING (traduções, mods, patches de widescreen/60fps)
+echo     4. Desligue; segure SELECT e ligue → menu do Luma3DS → marque com (A) "Enable game patching" → START.
+echo     5. Patches ficam em  SD:\luma\titles\^<TitleID^>\   com os arquivos code.ips (ou .bps) e/ou pasta romfs\.
+echo        O TitleID de cada jogo aparece no FBI → Titles → jogo (16 caracteres, ex.: 00040000000EDF00).
+echo     6. Traduções PT-BR: procure o patch do jogo no site do grupo tradutor; a maioria já vem na estrutura luma\titles.
+echo.
+call :AGUARDAR "Pressione qualquer tecla quando o Universal-Updater tiver instalado pelo menos o Nimbus"
+call :FIM_PASSO 27
+goto %DESTINO%
+
+:PASSO_28
+cls
+call :CABECALHO 28 "Pós-instalação (2/4): Pretendo Network (online de volta)"
+echo   A Nintendo Network desligou em 2024. A Pretendo Network é o servidor alternativo da comunidade
+echo   (Miiverse, online de alguns jogos, lista de amigos). Documentação: https://pretendo.network/docs/install/3ds
+echo.
+echo   Requisitos: Luma3DS atualizado (13.0 ou superior; o Universal-Updater atualiza) e Nimbus instalado.
+echo.
+echo   1. Abra o Nimbus no HOME → escolha "Pretendo" → confirme. O console reinicia.
+echo   2. Crie a conta PNID no próprio console: Configurações do Console → Configurações de Nintendo Network ID
+echo      → "Criar" → siga (o Nimbus redireciona para os servidores da Pretendo). Se já tinha NNID, crie uma PNID nova.
+echo   3. Confirme em https://pretendo.network/account (login com a PNID) que o console apareceu.
+echo   4. Para voltar à Nintendo Network (por exemplo, para atualizar o sistema): Nimbus → "Nintendo".
+echo.
+echo   Erros comuns: 002-0102 (banido/não-oficial) = está no servidor errado, troque no Nimbus; 022-2634 = NNID
+echo   não vinculada, use a PNID; erro ao criar conta = data/hora do console erradas.
+echo.
+call :AGUARDAR "Pressione qualquer tecla quando o console estiver na Pretendo com a PNID criada (ou se for pular)"
+call :FIM_PASSO 28
+goto %DESTINO%
+
+:PASSO_29
+cls
+call :CABECALHO 29 "Pós-instalação (3/4): backup de saves com o Checkpoint (e cópia para o PC)"
+echo   NO CONSOLE
+echo     1. Abra "Checkpoint" no HOME (instalado pelo finalize). Ele lista cartuchos e jogos instalados.
+echo     2. Selecione o jogo com o D-Pad, aperte (A) → "Backup" → digite um nome → (A). Repita para cada jogo.
+echo        Aba superior (L/R) alterna entre saves normais e "extdata".
+echo     3. Restaurar depois: selecione o jogo → escolha o backup na lista → "Restore".
+echo   Os backups ficam em  SD:\3ds\Checkpoint\saves\^<jogo^>\^<nome^>\  (e extdata em ...\extdata\).
+echo.
+echo   NO PC (opcional, recomendado): copiar a pasta do Checkpoint para a área de trabalho.
+if "%SDL%"=="" call :PEDIR_SD
+if "%SDL%"=="" goto PASSO_29_FIM
+if not exist "%SDL%:\3ds\Checkpoint\" goto PASSO_29_SEM
+set "SAVEBKP=%USERPROFILE%\Desktop\Backup_Saves_3DS"
+robocopy "%SDL%:\3ds\Checkpoint" "%SAVEBKP%" /E /R:2 /W:2 /NP /NFL /NDL
+echo   Copiado para %SAVEBKP%
+:PASSO_29_SEM
+if not exist "%SDL%:\3ds\Checkpoint\" echo   Pasta %SDL%:\3ds\Checkpoint não existe ainda (faça pelo menos um backup no console).
+:PASSO_29_FIM
+echo.
+call :AGUARDAR "Pressione qualquer tecla para continuar"
+call :FIM_PASSO 29
+goto %DESTINO%
+
+:PASSO_30
+cls
+call :CABECALHO 30 "Pós-instalação (4/4): migrar para um cartão SD maior (sem perder nada)"
+echo   Regra de ouro: o 3DS aceita trocar de cartão desde que TODO o conteúdo (inclusive a pasta "Nintendo 3DS")
+echo   seja copiado igual. Jogos instalados ficam presos ao console, não ao cartão, então a cópia funciona.
+echo.
+echo   1. Console DESLIGADO. Tire o cartão antigo (passo 7) e coloque no PC.
+set "SDL="
+call :PEDIR_SD
+if "%SDL%"=="" goto PASSO_30_FIM
+set "MIG=%USERPROFILE%\Desktop\Migracao_3DS"
+echo   2. Copiando TUDO do cartão antigo para %MIG% ...
+robocopy %SDL%:\ "%MIG%" /E /R:2 /W:2 /NP /NFL /NDL /XJ
+if errorlevel 8 (echo   Falha na cópia. Verifique o cartão com chkdsk %SDL%: /f e repita. & goto PASSO_30_FIM)
+echo   Cópia concluída.
+echo.
+echo   3. Tire o cartão antigo do PC ("Remover hardware com segurança"). Coloque o cartão NOVO no PC.
+echo   4. O cartão novo precisa estar em FAT32 com cluster de 32 KB e VAZIO (se veio de outro 3DS, apague a pasta
+echo      Nintendo 3DS dele).
+echo        - até 32 GB: o script pode formatar (abaixo).   - acima de 32 GB: use o guiformat (FAT32 Format), 32768.
+set "SDL="
+call :PEDIR_SD
+if "%SDL%"=="" goto PASSO_30_FIM
+echo.
+echo   ATENÇÃO: formatar APAGA TUDO no cartão %SDL%: . Só aceite se %SDL%: for o cartão NOVO.
+choice /c SN /n /m "   Formatar %SDL%: agora em FAT32 32 KB? (só até 32 GB)  [S] Sim   [N] Não, já está formatado : "
+if errorlevel 2 goto PASSO_30_COPIA
+set "CONF="
+set /p "CONF=   Para confirmar, digite a letra %SDL% de novo: "
+if /i not "%CONF%"=="%SDL%" (echo   Não confirmado. Pulando a formatação. & goto PASSO_30_COPIA)
+format %SDL%: /FS:FAT32 /A:32K /Q /V:3DS /Y
+:PASSO_30_COPIA
+echo.
+echo   5. Copiando tudo de %MIG% para o cartão novo %SDL%: ...
+robocopy "%MIG%" %SDL%:\ /E /R:2 /W:2 /NP /NFL /NDL
+if errorlevel 8 (echo   Falha ao copiar para o cartão novo. & goto PASSO_30_FIM)
+echo   Concluído. Conferindo pastas essenciais:
+set "FALTA=0"
+call :CHECA "%SDL%:\boot.firm"
+call :CHECA "%SDL%:\Nintendo 3DS"
+call :CHECA "%SDL%:\luma"
+echo.
+echo   6. Recomendado: rode o H2testw no cartão novo ANTES de confiar nele (cartões falsos são comuns).
+echo   7. "Remover hardware com segurança", coloque o cartão novo no console (passo 12) e ligue.
+echo      Todos os jogos, saves e temas devem aparecer. Se aparecer "cartão SD não reconhecido": formato errado.
+echo   8. Guarde o cartão antigo intacto por alguns dias como segurança.
+:PASSO_30_FIM
+echo.
+call :AGUARDAR "Pressione qualquer tecla para continuar"
+call :FIM_PASSO 30
+goto %DESTINO%
+
 :CONCLUIDO
 cls
 echo.
@@ -904,7 +1044,7 @@ echo   Onde estão seus backups:
 echo     - Cartão SD original : %BKP%
 echo     - NAND               : %USERPROFILE%\Desktop\Backup_NAND_New3DSXL
 echo.
-echo   Para desfazer tudo: opção 6 do menu.
+echo   Para desfazer tudo: opção 6 do menu.  Log de tudo que você respondeu: %LOG%
 echo.
 call :AGUARDAR "Pressione qualquer tecla para voltar ao menu"
 goto MENU
@@ -1033,6 +1173,75 @@ start "" "https://discord.gg/MWxPgEp"
 call :AGUARDAR "Pressione qualquer tecla para voltar ao menu"
 goto MENU
 
+:FERR_SD
+cls
+echo.
+echo   FERRAMENTAS DO CARTÃO SD
+echo   ------------------------
+echo   [1] Teste de velocidade (escrita/leitura de 200 MB)
+echo   [2] Verificar formato e espaço (FAT32)
+echo   [3] Abrir a página do H2testw (detecta cartão falso)
+echo   [4] Migrar para um cartão maior (passo 30)
+echo   [0] Voltar
+choice /c 12340 /n /m "   Escolha: "
+if errorlevel 5 goto MENU
+if errorlevel 4 goto PASSO_30
+if errorlevel 3 (start "" "https://www.heise.de/download/product/h2testw-50539" & goto FERR_SD)
+if errorlevel 2 goto PASSO_9
+call :TESTE_VELOCIDADE
+call :AGUARDAR "Pressione qualquer tecla"
+goto FERR_SD
+
+:TESTE_VELOCIDADE
+if "%SDL%"=="" call :PEDIR_SD
+if "%SDL%"=="" exit /b
+echo   Testando %SDL%: (escreve e apaga um arquivo temporário de 200 MB; não altera seus dados)...
+powershell -NoProfile -ExecutionPolicy Bypass -EncodedCommand %PSSPEED%
+exit /b
+
+:SAFECERTHAX
+cls
+echo.
+echo   ROTEIRO safecerthax  -  Old 3DS / Old 2DS (CTR-001, SPR-001, FTR-001), versões 1.0 a 11.14, todas as regiões
+echo   (Old 3DS em 11.15-11.17: use o MSET9, passos 17-22 deste guia, escolhendo "Old 3DS" no script.)
+echo   Fonte: 3ds.hacks.guide/installing-boot9strap-(safecerthax)
+echo.
+echo   I. TESTE DOS BOTÕES: ligue, no HOME aperte L + R juntos → a câmera deve abrir. Se não abrir, use MSET9.
+echo   II. CARTÃO SD (no PC): copie o conteúdo do Luma3DS .zip para a raiz; crie a pasta boot9strap e coloque
+echo       boot9strap.firm e boot9strap.firm.sha (release do boot9strap) dentro; SafeB9SInstaller.bin na raiz.
+echo       Links: github.com/LumaTeam/Luma3DS  github.com/SciresM/boot9strap  github.com/d0k3/SafeB9SInstaller
+call :AGUARDAR "Pressione qualquer tecla quando o cartão estiver pronto e de volta no console"
+echo   III. PROXY: Configurações → Configurações da Internet → Configurações de Conexão → sua rede → Alterar
+echo        configurações → próxima página → Configurações de Proxy → "Sim" → Configuração detalhada:
+echo        Servidor proxy:  ssloth.nintendohomebrew.com     Porta:  8080   → OK → Salvar → Testar conexão → desligue.
+call :AGUARDAR "Pressione qualquer tecla quando o teste de conexão passar com o proxy"
+echo   IV. MODO SEGURO: com o console desligado, SEGURE  L + R + D-Pad CIMA + A  e ligue; continue segurando até
+echo       aparecer o Modo Seguro → "OK" para atualizar → "Aceito" → aparece o erro 003-1099 (esperado) → "OK"
+echo       → o SafeB9SInstaller abre.
+call :AGUARDAR "Pressione qualquer tecla quando o SafeB9SInstaller aparecer"
+echo   V. Digite a combinação de botões mostrada → espere concluir → (A) reinicia → menu do Luma3DS → START.
+echo   VI. REMOVER O PROXY: mesmo caminho do passo III → Proxy "Não" → Salvar → Testar conexão.
+echo   Depois continue no passo 23 (Finalizar) deste guia: os passos 23-30 valem para o Old 3DS também.
+echo.
+choice /c 12 /n /m "   [1] Ir para o passo 23 (Finalizar)    [2] Menu : "
+if errorlevel 2 goto MENU
+goto PASSO_23
+
+:SEM_ACENTOS
+cls
+echo.
+echo   MODO SEM ACENTOS
+echo   Gera uma cópia deste guia só com caracteres ASCII (sem acentos; setas viram -^>) e abre a cópia.
+if "%ASCII%"=="1" (echo   Esta já é a versão sem acentos. & call :AGUARDAR "Pressione qualquer tecla" & goto MENU)
+set "SA_SRC=%~f0"
+set "SA_DST=%~dpn0_sem_acentos.bat"
+powershell -NoProfile -ExecutionPolicy Bypass -EncodedCommand %PSB64%
+if not exist "%SA_DST%" (echo   Falha ao gerar a cópia. & call :AGUARDAR "Pressione qualquer tecla" & goto MENU)
+echo   Gerado: %SA_DST%
+echo   Abrindo a versão sem acentos e fechando esta...
+start "" cmd /c "%SA_DST%"
+goto SAIR
+
 :APAGAR_PROGRESSO
 if exist "%PROG%" del /q "%PROG%"
 set "PASSO=0"
@@ -1109,6 +1318,7 @@ if %PROXIMO% GTR %TOTAL% set "DESTINO=CONCLUIDO"
 exit /b
 
 :SALVAR
+>>"%LOG%" echo %DATE% %TIME%  passo=%PASSO%  metodo=%METODO%  regiao=%REGIAO%  faixa=%FAIXA%  sd=%SDL%
 >"%PROG%" echo PASSO=%PASSO%
 >>"%PROG%" echo METODO=%METODO%
 >>"%PROG%" echo REGIAO=%REGIAO%

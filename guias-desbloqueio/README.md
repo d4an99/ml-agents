@@ -16,7 +16,15 @@ Dois scripts de Prompt de Comando do Windows que guiam, passo a passo e com conf
 4. O progresso é salvo em `progresso_*.txt` ao lado do script; `[2]` no menu continua de onde parou.
 
 O script do 3DS também faz, no PC: backup completo do cartão SD (robocopy), verificação de FAT32/espaço, criação de `luma\payloads`, conferência dos arquivos na raiz do cartão e cópia do backup da NAND. O do Quest procura o `adb.exe` do SideQuest e roda `adb devices` para diagnosticar a conexão.
-O guia de emuladores tem um menu de ferramentas ADB: criar a estrutura `/sdcard/Emuladores`, instalar APK, enviar (push) e baixar (pull) pastas, listar e desinstalar pacotes.
+O guia de emuladores tem um menu de ferramentas ADB: criar a estrutura `/sdcard/Emuladores`, instalar APK, enviar (push, com checagem de espaço) e baixar (pull) pastas, listar e desinstalar pacotes, verificar hashes de BIOS/keys, converter ISO para CHD com o chdman e aplicar perfis de desempenho.
+
+Todos os três têm a opção **Modo sem acentos** no menu: gera uma cópia `*_sem_acentos.bat` em ASCII puro e a abre, para consoles que exibem os acentos trocados.
+
+### Conteúdo extra por guia
+
+- **3DS**: pós-instalação (Universal-Updater, game patching do Luma, Pretendo Network, backup de saves com Checkpoint, migração para cartão maior), roteiro safecerthax para Old 3DS/2DS, teste de velocidade do cartão, link do H2testw e log com horário de cada passo em `log_new3dsxl.txt`.
+- **Quest (guia 1)**: checagem de conta de menor, instalação do SideQuest via winget, instalação automática do driver ADB (pnputil), verificação real via `adb shell getprop`, ADB sem fio automático, backup inicial (capturas, vídeos, lista de apps) e ajustes reversíveis via `setprop` (Hz, textura, CPU/GPU, Guardian).
+- **Quest (guia 2)**: RetroArch, PPSSPP, Dolphin, streaming completo do PC (Sunshine + Moonlight), backup automático de saves por tarefa agendada, ícones e atalhos (Lightning Launcher + Daijishō).
 
 ## Requisitos de formato
 

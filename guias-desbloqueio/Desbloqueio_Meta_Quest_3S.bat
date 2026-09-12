@@ -14,7 +14,9 @@ rem ============================================================================
 
 set "PASTA=%~dp0"
 set "PROG=%PASTA%progresso_quest3s.txt"
-set "TOTAL=16"
+set "TOTAL=18"
+set "ASCII=0"
+set "PSB64=CgAkAHMAcgBjAD0AJABlAG4AdgA6AFMAQQBfAFMAUgBDADsAIAAkAGQAcwB0AD0AJABlAG4AdgA6AFMAQQBfAEQAUwBUAAoAJAB0AD0AWwBJAE8ALgBGAGkAbABlAF0AOgA6AFIAZQBhAGQAQQBsAGwAVABlAHgAdAAoACQAcwByAGMALABbAFQAZQB4AHQALgBFAG4AYwBvAGQAaQBuAGcAXQA6ADoAVQBUAEYAOAApAAoAJABtAGEAcAA9AEAAewAKACAAKABbAHMAdAByAGkAbgBnAF0AWwBjAGgAYQByAF0AMAB4ADIAMQA5ADIAKQA9ACcALQBeAD4AJwA7ACAAIAAgACMAIACSIQoAIAAoAFsAcwB0AHIAaQBuAGcAXQBbAGMAaABhAHIAXQAwAHgAMgAxADkANAApAD0AJwAgAG8AdQAgACcAOwAgACAAIwAgAJQhCgAgACgAWwBzAHQAcgBpAG4AZwBdAFsAYwBoAGEAcgBdADAAeAAyADYAMwAwACkAPQAnAFsAbQBlAG4AdQBdACcAOwAjACAAMCYKACAAKABbAHMAdAByAGkAbgBnAF0AWwBjAGgAYQByAF0AMAB4ADIANwAxADMAKQA9ACcATwBLACcAOwAgACAAIAAgACMAIAATJwoAIAAoACcA5WUsZycAKQA9ACcATgBpAGgAbwBuACAAKABKAGEAcABhAG8AKQAnADsACgAgACgAJwAtippbVzBqMEQwJwApAD0AJwBuAGEAbwAgAGQAZQBmAGkAbgBpAHIAJwA7AAoAIAAoACcAALNc1fy7ba0nACkAPQAnAEQAYQBlAGgAYQBuACAATQBpAG4AZwB1AGsAIAAoAEMAbwByAGUAaQBhACkAJwA7AAoAIAAoACcAJMEVyFjVwMkgAErFTMcnACkAPQAnAG4AYQBvACAAZABlAGYAaQBuAGkAcgAnAAoAfQAKAGYAbwByAGUAYQBjAGgAKAAkAGsAIABpAG4AIAAkAG0AYQBwAC4ASwBlAHkAcwApAHsAIAAkAHQAPQAkAHQALgBSAGUAcABsAGEAYwBlACgAJABrACwAJABtAGEAcABbACQAawBdACkAIAB9AAoAJABuAD0AJAB0AC4ATgBvAHIAbQBhAGwAaQB6AGUAKABbAFQAZQB4AHQALgBOAG8AcgBtAGEAbABpAHoAYQB0AGkAbwBuAEYAbwByAG0AXQA6ADoARgBvAHIAbQBEACkACgAkAHMAYgA9AE4AZQB3AC0ATwBiAGoAZQBjAHQAIABUAGUAeAB0AC4AUwB0AHIAaQBuAGcAQgB1AGkAbABkAGUAcgAKAGYAbwByAGUAYQBjAGgAKAAkAGMAIABpAG4AIAAkAG4ALgBUAG8AQwBoAGEAcgBBAHIAcgBhAHkAKAApACkAewAKACAAIABpAGYAKABbAEcAbABvAGIAYQBsAGkAegBhAHQAaQBvAG4ALgBDAGgAYQByAFUAbgBpAGMAbwBkAGUASQBuAGYAbwBdADoAOgBHAGUAdABVAG4AaQBjAG8AZABlAEMAYQB0AGUAZwBvAHIAeQAoACQAYwApACAALQBuAGUAIABbAEcAbABvAGIAYQBsAGkAegBhAHQAaQBvAG4ALgBVAG4AaQBjAG8AZABlAEMAYQB0AGUAZwBvAHIAeQBdADoAOgBOAG8AbgBTAHAAYQBjAGkAbgBnAE0AYQByAGsAKQB7ACAAWwB2AG8AaQBkAF0AJABzAGIALgBBAHAAcABlAG4AZAAoACQAYwApACAAfQAKAH0ACgAkAG8AdQB0AD0AJABzAGIALgBUAG8AUwB0AHIAaQBuAGcAKAApAAoAJABvAHUAdAA9AFsAcgBlAGcAZQB4AF0AOgA6AFIAZQBwAGwAYQBjAGUAKAAkAG8AdQB0ACwAJwBbAF4AXAB4ADAAMAAtAFwAeAA3AEYAXQAnACwAJwA/ACcAKQAKACQAbwB1AHQAPQAkAG8AdQB0AC4AUgBlAHAAbABhAGMAZQAoACcAcwBlAHQAIAAiAEEAUwBDAEkASQA9ADAAIgAnACwAJwBzAGUAdAAgACIAQQBTAEMASQBJAD0AMQAiACcAKQAKAFsASQBPAC4ARgBpAGwAZQBdADoAOgBXAHIAaQB0AGUAQQBsAGwAVABlAHgAdAAoACQAZABzAHQALAAkAG8AdQB0ACwAKABOAGUAdwAtAE8AYgBqAGUAYwB0ACAAVABlAHgAdAAuAFUAVABGADgARQBuAGMAbwBkAGkAbgBnACgAJABmAGEAbABzAGUAKQApACkACgA="
 set "DESTINO=MENU"
 set "VOLTAR=MENU"
 set "PASSO=0"
@@ -44,9 +46,11 @@ echo   [6] Como desfazer (desativar o modo desenvolvedor / remover apps)
 echo   [7] Abrir links oficiais no navegador
 echo   [8] Diagnóstico rápido da conexão ADB (headset ligado no cabo)
 echo   [9] Apagar o progresso salvo
+echo   [A] Modo sem acentos (use se o texto aparecer com caracteres estranhos)
 echo   [0] Sair
 echo.
-choice /c 1234567890 /n /m "   Escolha uma opção: "
+choice /c 1234567890A /n /m "   Escolha uma opção: "
+if errorlevel 11 goto SEM_ACENTOS
 if errorlevel 10 goto SAIR
 if errorlevel 9 goto APAGAR_PROGRESSO
 if errorlevel 8 (set "VOLTAR=MENU" & goto DIAG_ADB)
@@ -76,7 +80,9 @@ echo    4  Conta Meta e app Meta Horizon no celular       12  Verificar a conex�
 echo    5  Criar a organização de desenvolvedor (site)    13  Instalar o primeiro app (sideload de teste)
 echo    6  Verificar a conta (SMS ou cartão)              14  Encontrar os apps: aba "Fontes desconhecidas"
 echo    7  Ativar o Modo Desenvolvedor no app do celular  15  (Opcional) ADB sem fio pelo Wi-Fi
-echo    8  PC: drivers ADB + SideQuest                    16  Verificação final e boas práticas
+echo    8  PC: drivers ADB + SideQuest                    16  Backup inicial (capturas, vídeos, lista de apps)
+echo                                                    17  Ajustes de conforto via ADB (Hz, textura, CPU/GPU, Guardian)
+echo                                                    18  Verificação final e boas práticas
 echo.
 set "N="
 set /p "N=   Digite o número do passo (1-%TOTAL%) ou ENTER para voltar: "
@@ -116,9 +122,20 @@ echo     - PC com Windows 10/11 e uma porta USB (ideal USB 3.0, azul).
 echo     - Cabo USB-C de DADOS (o cabo de carga da caixa serve; cabos "só carga" não funcionam).
 echo     - Wi-Fi para o headset e para o PC.
 echo.
-call :AGUARDAR "Li e entendi. Pressione qualquer tecla para continuar"
+call :PERGUNTA "   A conta Meta usada no headset é de maior de 18 anos e NÃO é gerenciada por um responsável?"
+if errorlevel 2 goto CONTA_MENOR
 call :FIM_PASSO 1
 goto %DESTINO%
+
+:CONTA_MENOR
+echo.
+echo   PARE AQUI: contas de menor de idade (10-17, gerenciadas pelo app dos pais) NÃO podem ativar o Modo Desenvolvedor.
+echo   A Meta não oferece exceção. Opções reais:
+echo     - usar uma conta Meta de um adulto como conta principal do headset (Configurações → Contas → adicionar);
+echo     - esperar completar 18 anos e converter a conta.
+echo   Não adianta continuar o guia com a conta atual: a opção simplesmente não aparece no app.
+call :AGUARDAR "Pressione qualquer tecla para voltar ao menu"
+goto MENU
 
 :PASSO_2
 cls
@@ -264,10 +281,16 @@ echo.
 echo   Alternativa oficial da Meta: "Meta Quest Developer Hub" (MQDH) - faz o mesmo com menos recursos:
 echo      https://developers.meta.com/horizon/downloads/package/oculus-developer-hub-win/
 echo.
-choice /c SN /n /m "   [S] Abrir os dois links agora    [N] Já baixei : "
-if errorlevel 2 goto PASSO_8_FIM
-start "" "https://developers.meta.com/horizon/downloads/package/oculus-adb-drivers/"
-start "" "https://sidequestvr.com/setup-howto"
+echo   AUTOMAÇÃO (opcional):
+echo     [1] Instalar o SideQuest agora pelo winget (gerenciador de pacotes do Windows)
+echo     [2] Instalar o driver ADB automaticamente (procura o .zip da Meta na pasta Downloads e instala com pnputil)
+echo     [3] Abrir os dois links no navegador
+echo     [4] Já instalei tudo manualmente
+choice /c 1234 /n /m "   Escolha: "
+if errorlevel 4 goto PASSO_8_FIM
+if errorlevel 3 (start "" "https://developers.meta.com/horizon/downloads/package/oculus-adb-drivers/" & start "" "https://sidequestvr.com/setup-howto" & goto PASSO_8_FIM)
+if errorlevel 2 (call :DRIVER_AUTO & goto PASSO_8_FIM)
+call :SIDEQUEST_WINGET
 :PASSO_8_FIM
 echo.
 call :AGUARDAR "Pressione qualquer tecla quando os drivers e o SideQuest estiverem instalados"
@@ -406,22 +429,64 @@ echo   2. O SideQuest mostra o IP do headset e a bolinha continua verde.
 echo   3. AÇÃO FÍSICA: desconecte o cabo do headset. A bolinha deve continuar VERDE (sem fio).
 echo   4. Isso é perdido ao reiniciar o headset - basta repetir com o cabo quando precisar.
 echo.
-echo   Por linha de comando (opcional):
-echo          adb tcpip 5555
-echo          adb connect IP_DO_HEADSET:5555
-echo.
-call :AGUARDAR "Pressione qualquer tecla para continuar (ou pule este passo)"
+echo   AUTOMÁTICO: este guia pode fazer isso agora (cabo conectado): adb tcpip 5555 → descobre o IP → adb connect.
+choice /c SN /n /m "   [S] Ativar ADB sem fio agora    [N] Pular : "
+if not errorlevel 2 call :ADB_WIFI
+call :AGUARDAR "Pressione qualquer tecla para continuar"
 call :FIM_PASSO 15
 goto %DESTINO%
 
 :PASSO_16
 cls
-call :CABECALHO 16 "Verificação final e boas práticas"
+call :CABECALHO 16 "Backup inicial: capturas de tela, vídeos e lista de apps (automático)"
+echo   Antes de mexer em mais coisas, guarde no PC o que já existe no headset. Cabo conectado e depuração aceita.
+echo   Destino: %USERPROFILE%\Desktop\Quest_Backup\
+echo     Screenshots\   ← /sdcard/Oculus/Screenshots
+echo     VideoShots\    ← /sdcard/Oculus/VideoShots
+echo     apps_instalados.txt  ← lista de pacotes (útil para reinstalar depois)
+echo     info_headset.txt     ← modelo, build, número de série
+echo.
+call :ACHAR_ADB
+if not defined ADB goto PASSO_16_FIM
+choice /c SN /n /m "   [S] Fazer o backup agora    [N] Pular : "
+if errorlevel 2 goto PASSO_16_FIM
+set "QB=%USERPROFILE%\Desktop\Quest_Backup"
+if not exist "%QB%" mkdir "%QB%"
+"%ADB%" pull /sdcard/Oculus/Screenshots "%QB%\Screenshots"
+"%ADB%" pull /sdcard/Oculus/VideoShots "%QB%\VideoShots"
+"%ADB%" shell pm list packages -3 > "%QB%\apps_instalados.txt"
+"%ADB%" shell getprop ro.product.model > "%QB%\info_headset.txt"
+"%ADB%" shell getprop ro.build.display.id >> "%QB%\info_headset.txt"
+"%ADB%" shell getprop ro.serialno >> "%QB%\info_headset.txt"
+echo.
+echo   Concluído. Conteúdo de %QB%:
+dir /b "%QB%"
+:PASSO_16_FIM
+echo.
+call :AGUARDAR "Pressione qualquer tecla para continuar"
+call :FIM_PASSO 16
+goto %DESTINO%
+
+:PASSO_17
+cls
+call :CABECALHO 17 "Ajustes de conforto e desempenho via ADB (reversíveis)"
+echo   Estes ajustes usam "setprop" e valem até o headset REINICIAR (reiniciar = tudo volta ao padrão).
+echo   O SideQuest faz o mesmo em "Device Settings ^& Tools"; aqui é direto.
+echo.
+call :AJUSTES_ADB
+call :AGUARDAR "Pressione qualquer tecla para continuar"
+call :FIM_PASSO 17
+goto %DESTINO%
+
+:PASSO_18
+cls
+call :CABECALHO 18 "Verificação final e boas práticas"
 echo   CHECKLIST (todas devem ser SIM):
 echo     [ ] App Meta Horizon → headset → Configurações do headset → Modo de desenvolvedor = LIGADO.
 echo     [ ] Headset → Configurações → Sistema → aba "Desenvolvedor" existe.
 echo     [ ] SideQuest com bolinha VERDE ao conectar o cabo (sem pedir permissão de novo).
 echo     [ ] Biblioteca → Fontes desconhecidas mostra o app de teste e ele abre.
+echo     [ ] Backup inicial feito (passo 16) em Desktop\Quest_Backup.
 echo.
 echo   BOAS PRÁTICAS:
 echo     - Antes de instalar um APK, confira a fonte (GitHub oficial do projeto ou catálogo SideQuest).
@@ -434,7 +499,7 @@ echo     - Ajustes de desempenho (resolução, Hz, CPU/GPU level) ficam em SideQ
 echo       Voltam ao padrão ao reiniciar o headset; nada é permanente.
 echo.
 call :AGUARDAR "Pressione qualquer tecla quando o checklist estiver completo"
-call :FIM_PASSO 16
+call :FIM_PASSO 18
 goto %DESTINO%
 
 :CONCLUIDO
@@ -579,10 +644,122 @@ echo   Executando: adb devices
 echo.
 "%ADB%" devices
 echo.
-echo   Modelo reportado (se conectado):
-"%ADB%" shell getprop ro.product.model 2>nul
-"%ADB%" shell getprop ro.build.version.release 2>nul
+echo   Informações do headset (se conectado e autorizado):
+for /f "usebackq delims=" %%V in (`call "%ADB%" shell getprop ro.product.model 2^>nul`) do echo     Modelo ............ %%V
+for /f "usebackq delims=" %%V in (`call "%ADB%" shell getprop ro.build.display.id 2^>nul`) do echo     Build Horizon OS .. %%V
+for /f "usebackq delims=" %%V in (`call "%ADB%" shell getprop ro.build.version.release 2^>nul`) do echo     Base Android ...... %%V
+for /f "usebackq delims=" %%V in (`call "%ADB%" shell settings get global development_settings_enabled 2^>nul`) do echo     Opções de desenvolvedor ativas (1 = sim) .. %%V
+for /f "usebackq delims=" %%V in (`call "%ADB%" shell settings get global adb_enabled 2^>nul`) do echo     Depuração ADB ativa (1 = sim) ............ %%V
+for /f "usebackq delims=" %%V in (`call "%ADB%" shell dumpsys battery 2^>nul ^| findstr /c:"level"`) do echo     Bateria ........... %%V
 exit /b
+
+:SIDEQUEST_WINGET
+echo.
+where winget >nul 2>&1 || goto SQ_SEM_WINGET
+echo   Instalando SideQuest via winget (aceita os termos automaticamente)...
+winget install -e --id SideQuestVR.SideQuest --accept-source-agreements --accept-package-agreements
+if errorlevel 1 (echo   winget falhou. Baixe manualmente: https://sidequestvr.com/setup-howto & start "" "https://sidequestvr.com/setup-howto")
+exit /b
+:SQ_SEM_WINGET
+echo   winget não encontrado - Windows 10 antigo. Instale "Instalador de Aplicativo" pela Microsoft Store ou baixe o SideQuest do site.
+start "" "https://sidequestvr.com/setup-howto"
+exit /b
+
+:DRIVER_AUTO
+echo.
+set "DRVZIP="
+for /f "delims=" %%Z in ('dir /b /s "%USERPROFILE%\Downloads\*adb*driver*.zip" 2^>nul') do if not defined DRVZIP set "DRVZIP=%%Z"
+if not defined DRVZIP for /f "delims=" %%Z in ('dir /b /s "%USERPROFILE%\Downloads\*adb-driver*.zip" 2^>nul') do if not defined DRVZIP set "DRVZIP=%%Z"
+if not defined DRVZIP (echo   Não achei o .zip do driver em Downloads. Baixe em https://developers.meta.com/horizon/downloads/package/oculus-adb-drivers/ e repita. & start "" "https://developers.meta.com/horizon/downloads/package/oculus-adb-drivers/" & exit /b)
+echo   Encontrado: %DRVZIP%
+set "DRVDIR=%PUBLIC%\adbdrv"
+if exist "%DRVDIR%" rd /s /q "%DRVDIR%"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "Expand-Archive -LiteralPath '%DRVZIP%' -DestinationPath '%DRVDIR%' -Force"
+set "INF="
+for /f "delims=" %%I in ('dir /b /s "%DRVDIR%\android_winusb.inf" 2^>nul') do if not defined INF set "INF=%%I"
+if not defined INF (echo   android_winusb.inf não encontrado dentro do zip. & exit /b)
+echo   Instalando o driver (o Windows vai pedir permissão de administrador)...
+powershell -NoProfile -ExecutionPolicy Bypass -Command "Start-Process pnputil -ArgumentList '/add-driver %INF% /install' -Verb RunAs -Wait"
+echo   Verificando se o driver ficou registrado:
+pnputil /enum-drivers | findstr /i "android_winusb" >nul && echo   OK: driver android_winusb instalado. || echo   Não apareceu na lista; repita com botão direito → Instalar no .inf.
+exit /b
+
+:ADB_WIFI
+call :ACHAR_ADB
+if not defined ADB exit /b
+echo   1/3 Colocando o ADB do headset em modo TCP (porta 5555)...
+"%ADB%" tcpip 5555
+timeout /t 3 >nul
+set "QIP="
+for /f "usebackq tokens=2" %%A in (`call "%ADB%" shell ip -f inet addr show wlan0 2^>nul ^| findstr /c:"inet "`) do if not defined QIP set "QIP=%%A"
+for /f "delims=/" %%A in ("%QIP%") do set "QIP=%%A"
+if not defined QIP (echo   Não consegui ler o IP do headset - Wi-Fi desligado? Veja o IP em Configurações → Wi-Fi → sua rede. & exit /b)
+echo   2/3 IP do headset: %QIP%
+echo   3/3 Conectando sem fio...
+"%ADB%" connect %QIP%:5555
+echo.
+echo   Agora pode desconectar o cabo. No SideQuest a bolinha deve continuar verde (ou clique no ícone de Wi-Fi).
+echo   Para reconectar depois de reiniciar o headset: conecte o cabo e repita este passo.
+"%ADB%" devices
+exit /b
+
+:AJUSTES_ADB
+call :ACHAR_ADB
+if not defined ADB exit /b
+:AJUSTES_MENU
+echo.
+echo   AJUSTES VIA ADB (setprop; voltam ao padrão ao reiniciar o headset)
+echo   [1] Taxa de atualização 120 Hz (ative antes "120 Hz" em Configurações → Sistema → Tela, experimental)
+echo   [2] Taxa de atualização 90 Hz (padrão)        [3] 72 Hz (economia de bateria)
+echo   [4] Resolução de textura 1,3x (mais nítido; custa bateria)   [5] Textura padrão
+echo   [6] CPU e GPU no nível máximo (emuladores/jogos pesados)    [7] CPU/GPU automático (padrão)
+echo   [8] Pausar o Guardian (modo sentado; CUIDADO com o ambiente)  [9] Reativar o Guardian
+echo   [R] Reverter TUDO agora (sem reiniciar)       [0] Voltar
+choice /c 123456789R0 /n /m "   Escolha: "
+if errorlevel 11 exit /b
+if errorlevel 10 goto AJ_REVERT
+if errorlevel 9 ("%ADB%" shell setprop debug.oculus.guardian_pause 0 & goto AJ_OK)
+if errorlevel 8 ("%ADB%" shell setprop debug.oculus.guardian_pause 1 & goto AJ_OK)
+if errorlevel 7 ("%ADB%" shell "setprop debug.oculus.cpuLevel '' ; setprop debug.oculus.gpuLevel ''" & goto AJ_OK)
+if errorlevel 6 ("%ADB%" shell "setprop debug.oculus.cpuLevel 4 ; setprop debug.oculus.gpuLevel 4" & goto AJ_OK)
+if errorlevel 5 ("%ADB%" shell "setprop debug.oculus.textureWidth '' ; setprop debug.oculus.textureHeight ''" & goto AJ_OK)
+if errorlevel 4 ("%ADB%" shell "setprop debug.oculus.textureWidth 2184 ; setprop debug.oculus.textureHeight 2288" & goto AJ_OK)
+if errorlevel 3 ("%ADB%" shell setprop debug.oculus.refreshRate 72 & goto AJ_OK)
+if errorlevel 2 ("%ADB%" shell setprop debug.oculus.refreshRate 90 & goto AJ_OK)
+"%ADB%" shell setprop debug.oculus.refreshRate 120
+:AJ_OK
+echo   Aplicado. Valores atuais:
+"%ADB%" shell "getprop | grep -E 'debug.oculus.(refreshRate|textureWidth|textureHeight|cpuLevel|gpuLevel|guardian_pause)'"
+goto AJUSTES_MENU
+:AJ_REVERT
+"%ADB%" shell "setprop debug.oculus.refreshRate '' ; setprop debug.oculus.textureWidth '' ; setprop debug.oculus.textureHeight '' ; setprop debug.oculus.cpuLevel '' ; setprop debug.oculus.gpuLevel '' ; setprop debug.oculus.guardian_pause 0"
+echo   Tudo revertido para o padrão.
+goto AJUSTES_MENU
+
+:ACHAR_ADB
+if defined ADB if exist "%ADB%" exit /b
+set "ADB="
+for /f "delims=" %%P in ('where adb 2^>nul') do if not defined ADB set "ADB=%%P"
+if not defined ADB for /f "delims=" %%P in ('dir /b /s "%LOCALAPPDATA%\Programs\SideQuest\adb.exe" 2^>nul') do if not defined ADB set "ADB=%%P"
+if not defined ADB for /f "delims=" %%P in ('dir /b /s "%ProgramFiles%\SideQuest\adb.exe" 2^>nul') do if not defined ADB set "ADB=%%P"
+if not defined ADB for /f "delims=" %%P in ('dir /b /s "%LOCALAPPDATA%\Android\Sdk\platform-tools\adb.exe" 2^>nul') do if not defined ADB set "ADB=%%P"
+if not defined ADB (echo   adb.exe não encontrado. Instale o SideQuest, passo 8, e reabra este guia. & exit /b)
+exit /b
+
+:SEM_ACENTOS
+cls
+echo.
+echo   MODO SEM ACENTOS
+echo   Gera uma cópia deste guia só com caracteres ASCII (sem acentos; setas viram -^>) e abre a cópia.
+if "%ASCII%"=="1" (echo   Esta já é a versão sem acentos. & call :AGUARDAR "Pressione qualquer tecla" & goto MENU)
+set "SA_SRC=%~f0"
+set "SA_DST=%~dpn0_sem_acentos.bat"
+powershell -NoProfile -ExecutionPolicy Bypass -EncodedCommand %PSB64%
+if not exist "%SA_DST%" (echo   Falha ao gerar a cópia. & call :AGUARDAR "Pressione qualquer tecla" & goto MENU)
+echo   Gerado: %SA_DST%
+echo   Abrindo a versão sem acentos e fechando esta...
+start "" cmd /c "%SA_DST%"
+goto SAIR
 
 :APAGAR_PROGRESSO
 if exist "%PROG%" del /q "%PROG%"
