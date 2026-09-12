@@ -81,6 +81,8 @@ echo.
 set "N="
 set /p "N=   Digite o número do passo (1-%TOTAL%) ou ENTER para voltar: "
 if "%N%"=="" goto MENU
+:STRIP_ZERO
+if "%N:~0,1%"=="0" if not "%N%"=="0" (set "N=%N:~1%" & goto STRIP_ZERO)
 echo %N%| findstr /r "^[0-9][0-9]*$" >nul || goto IR_PARA
 if %N% LSS 1 goto IR_PARA
 if %N% GTR %TOTAL% goto IR_PARA
