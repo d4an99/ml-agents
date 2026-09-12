@@ -18,7 +18,7 @@ Dois scripts de Prompt de Comando do Windows que guiam, passo a passo e com conf
 O script do 3DS também faz, no PC: backup completo do cartão SD (robocopy), verificação de FAT32/espaço, criação de `luma\payloads`, conferência dos arquivos na raiz do cartão e cópia do backup da NAND. O do Quest procura o `adb.exe` do SideQuest e roda `adb devices` para diagnosticar a conexão.
 O guia de emuladores tem um menu de ferramentas ADB: criar a estrutura `/sdcard/Emuladores`, instalar APK, enviar (push, com checagem de espaço) e baixar (pull) pastas, listar e desinstalar pacotes, verificar hashes de BIOS/keys, converter ISO para CHD com o chdman e aplicar perfis de desempenho.
 
-Todos os três têm a opção **Modo sem acentos** no menu: gera uma cópia `*_sem_acentos.bat` em ASCII puro e a abre, para consoles que exibem os acentos trocados.
+Todos os três têm a opção **Modo sem acentos** no menu: gera uma cópia `*_sem_acentos.bat` em ASCII puro e a abre, para consoles que exibem os acentos trocados. As três cópias já vêm prontas nesta pasta (`*_sem_acentos.bat`); se editar um guia, regenere a sua pela opção do menu.
 
 ### Conteúdo extra por guia
 
