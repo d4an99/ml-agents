@@ -1,0 +1,41 @@
+GUIAS INTERATIVOS DE DESBLOQUEIO
+================================
+
+COMO USAR
+1. Extraia esta pasta em qualquer lugar do Windows (ex.: Area de Trabalho\Guias).
+2. De duplo clique no .bat que voce quer. Se o SmartScreen avisar:
+   "Mais informacoes" -> "Executar assim mesmo".
+3. No menu, [1] comeca do inicio e [2] continua de onde voce parou.
+   Cada passo termina com: [S] proximo  [R] repetir  [M] menu  [E] erros.
+4. O progresso fica salvo em progresso_*.txt, na mesma pasta.
+
+QUAL ARQUIVO USAR
+  Desbloqueio_New_3DS_XL.bat
+      New Nintendo 3DS XL: boot9strap + Luma3DS (30 passos).
+      Tambem cobre Old 3DS/2DS pelo safecerthax e o pos-instalacao.
+
+  Desbloqueio_Meta_Quest_3S.bat
+      Meta Quest 3S: Modo Desenvolvedor oficial + SideQuest/ADB (18 passos).
+      Faca este ANTES do guia de emuladores.
+
+  Meta_Quest_3S_Emuladores_e_Apps.bat
+      Meta Quest 3S: launcher Android, CitraVR (3DS), melonDS (NDS),
+      NetherSX2 (PS2), X1 BOX (Xbox), Eden (Switch), RetroArch, PPSSPP,
+      Dolphin, streaming do PC, Stremio e como colocar os jogos (26 passos).
+
+  *_sem_acentos.bat
+      As mesmas tres guias em ASCII puro. Use SOMENTE se os acentos
+      aparecerem trocados no Prompt de Comando. O conteudo e identico.
+
+ORDEM RECOMENDADA PARA O QUEST
+  1) Desbloqueio_Meta_Quest_3S.bat   2) Meta_Quest_3S_Emuladores_e_Apps.bat
+
+AVISOS
+- Os guias pedem confirmacao a cada acao fisica (virar o console, abrir a
+  tampa, tirar o cartao, ligar o cabo). Leia antes de apertar.
+- Jogos, BIOS e chaves devem vir dos SEUS proprios consoles e jogos.
+- Todo procedimento e reversivel: cada guia tem a opcao "Como desfazer".
+- Em caso de erro, use a opcao [E] Erros do proprio guia antes de improvisar.
+
+Detalhes tecnicos, fontes consultadas e como os scripts foram testados
+estao no README.md.
