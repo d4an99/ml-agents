@@ -388,8 +388,9 @@ echo   da Play Store é polêmica; a versão gratuita está no GitHub. A equipe 
 echo   Android oficial, sem data. Requisitos: Android 8+, arm64, GPU Vulkan, 8 GB de RAM (o Quest 3S tem 8 GB,
 echo   mas o sistema usa parte). Espere desempenho FRACO: teste só jogos leves.
 echo.
-echo   1. Baixe o APK gratuito no GitHub (ex.: https://github.com/phobos665/xemu-android/releases ou
-echo      https://github.com/izzy2lost/xemu/releases) - confira sempre a release mais recente.
+echo   1. Baixe o APK gratuito em  https://github.com/izzy2lost/xemu/releases  (release mais recente).
+echo      Alternativa: https://github.com/WinDroidEmulation/X1-BOX/releases  (versão mais antiga).
+echo      Confira a data da release antes de baixar; o projeto muda de mãos com frequência.
 echo   2. Instale pelo SideQuest / opção 8.
 echo   3. ARQUIVOS DO SEU XBOX (o app tem um assistente que pede cada um):
 echo        mcpx_1.0.bin          (boot ROM MCPX)
@@ -463,7 +464,8 @@ goto %DESTINO%
 :PASSO_14
 cls
 call :CABECALHO 14 "Eden (Switch): instalar, driver de GPU, configurar e jogar"
-echo   1. Baixe:  https://github.com/eden-emulator/Releases/releases/latest  → APK Android (arm64 / "android" no nome).
+echo   1. Baixe no site oficial:  https://eden-emu.dev/downloads  → seção Android → "Standard APK" (arm64).
+echo      (O espelho do Eden no GitHub foi retirado do ar; use o site oficial ou git.eden-emu.dev.)
 echo   2. Instale pelo SideQuest / opção 8.
 echo   3. DRIVER DE GPU (Turnip): melhora muito em Adreno. Baixe um .zip de driver Turnip/Mesa recente:
 echo        https://github.com/K11MCH1/AdrenoToolsDrivers/releases   (ex.: turnip-vX.X.X.zip; NÃO extraia)
@@ -810,8 +812,8 @@ echo   Lightning Launcher ...... https://github.com/threethan/LightningLauncher/
 echo   CitraVR (3DS) ........... https://github.com/amwatson/CitraVR/releases/latest
 echo   melonDS (NDS) ........... https://github.com/rafaelvcaetano/melonDS-android/releases/latest
 echo   NetherSX2 (PS2) ......... https://github.com/Trixarian/NetherSX2-classic/releases/latest
-echo   X1 BOX / xemu (Xbox) .... https://github.com/phobos665/xemu-android/releases   (não oficial)
-echo   Eden (Switch) ........... https://github.com/eden-emulator/Releases/releases/latest
+echo   X1 BOX / xemu (Xbox) .... https://github.com/izzy2lost/xemu/releases   (não oficial)
+echo   Eden (Switch) ........... https://eden-emu.dev/downloads
 echo   Turnip GPU drivers ...... https://github.com/K11MCH1/AdrenoToolsDrivers/releases
 echo   Stremio ................. https://www.stremio.com/downloads   (Android → arm64-v8a)
 echo   RetroArch ............... https://buildbot.libretro.com/stable/  (android → RetroArch_aarch64.apk)
@@ -896,7 +898,7 @@ start "" "https://github.com/amwatson/CitraVR/releases/latest"
 start "" "https://github.com/amwatson/CitraVR/wiki"
 start "" "https://github.com/rafaelvcaetano/melonDS-android/releases/latest"
 start "" "https://github.com/Trixarian/NetherSX2-classic/releases/latest"
-start "" "https://github.com/eden-emulator/Releases/releases/latest"
+start "" "https://eden-emu.dev/downloads"
 start "" "https://www.stremio.com/downloads"
 call :AGUARDAR "Pressione qualquer tecla para voltar ao menu"
 goto MENU
@@ -1153,6 +1155,8 @@ if not exist "%ORIG%\" (echo   Pasta não encontrada. & exit /b)
 set "SZKB=" & set "FREEKB="
 for /f "usebackq delims=" %%K in (`powershell -NoProfile -Command "[int64]((Get-ChildItem -LiteralPath '%ORIG%' -Recurse -File ^| Measure-Object Length -Sum).Sum/1KB)"`) do set "SZKB=%%K"
 for /f "usebackq skip=1 tokens=4" %%K in (`call "%ADB%" shell df /sdcard 2^>nul`) do if not defined FREEKB set "FREEKB=%%K"
+if defined SZKB for /f "delims=0123456789" %%Z in ("%SZKB%") do set "SZKB="
+if defined FREEKB for /f "delims=0123456789" %%Z in ("%FREEKB%") do set "FREEKB="
 if defined SZKB if defined FREEKB (set /a SZMB=%SZKB%/1024 & set /a FREEMB=%FREEKB%/1024)
 if defined SZKB if defined FREEKB echo   Tamanho da pasta: %SZMB% MB   Livre no headset: %FREEMB% MB
 if defined SZKB if defined FREEKB if %SZKB% GTR %FREEKB% (echo   NÃO CABE: libere espaço no headset ou envie menos jogos. & exit /b)
