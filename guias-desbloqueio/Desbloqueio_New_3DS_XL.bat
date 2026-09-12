@@ -18,7 +18,7 @@ set "PROG=%PASTA%progresso_new3dsxl.txt"
 set "TOTAL=30"
 set "ASCII=0"
 set "LOG=%PASTA%log_new3dsxl.txt"
-set "PSB64=CgAkAHMAcgBjAD0AJABlAG4AdgA6AFMAQQBfAFMAUgBDADsAIAAkAGQAcwB0AD0AJABlAG4AdgA6AFMAQQBfAEQAUwBUAAoAJAB0AD0AWwBJAE8ALgBGAGkAbABlAF0AOgA6AFIAZQBhAGQAQQBsAGwAVABlAHgAdAAoACQAcwByAGMALABbAFQAZQB4AHQALgBFAG4AYwBvAGQAaQBuAGcAXQA6ADoAVQBUAEYAOAApAAoAJABtAGEAcAA9AEAAewAKACAAKABbAHMAdAByAGkAbgBnAF0AWwBjAGgAYQByAF0AMAB4ADIAMQA5ADIAKQA9ACcALQBeAD4AJwA7ACAAIAAgACMAIACSIQoAIAAoAFsAcwB0AHIAaQBuAGcAXQBbAGMAaABhAHIAXQAwAHgAMgAxADkANAApAD0AJwAgAG8AdQAgACcAOwAgACAAIwAgAJQhCgAgACgAWwBzAHQAcgBpAG4AZwBdAFsAYwBoAGEAcgBdADAAeAAyADYAMwAwACkAPQAnAFsAbQBlAG4AdQBdACcAOwAjACAAMCYKACAAKABbAHMAdAByAGkAbgBnAF0AWwBjAGgAYQByAF0AMAB4ADIANwAxADMAKQA9ACcATwBLACcAOwAgACAAIAAgACMAIAATJwoAIAAoACcA5WUsZycAKQA9ACcATgBpAGgAbwBuACAAKABKAGEAcABhAG8AKQAnADsACgAgACgAJwAtippbVzBqMEQwJwApAD0AJwBuAGEAbwAgAGQAZQBmAGkAbgBpAHIAJwA7AAoAIAAoACcAALNc1fy7ba0nACkAPQAnAEQAYQBlAGgAYQBuACAATQBpAG4AZwB1AGsAIAAoAEMAbwByAGUAaQBhACkAJwA7AAoAIAAoACcAJMEVyFjVwMkgAErFTMcnACkAPQAnAG4AYQBvACAAZABlAGYAaQBuAGkAcgAnAAoAfQAKAGYAbwByAGUAYQBjAGgAKAAkAGsAIABpAG4AIAAkAG0AYQBwAC4ASwBlAHkAcwApAHsAIAAkAHQAPQAkAHQALgBSAGUAcABsAGEAYwBlACgAJABrACwAJABtAGEAcABbACQAawBdACkAIAB9AAoAJABuAD0AJAB0AC4ATgBvAHIAbQBhAGwAaQB6AGUAKABbAFQAZQB4AHQALgBOAG8AcgBtAGEAbABpAHoAYQB0AGkAbwBuAEYAbwByAG0AXQA6ADoARgBvAHIAbQBEACkACgAkAHMAYgA9AE4AZQB3AC0ATwBiAGoAZQBjAHQAIABUAGUAeAB0AC4AUwB0AHIAaQBuAGcAQgB1AGkAbABkAGUAcgAKAGYAbwByAGUAYQBjAGgAKAAkAGMAIABpAG4AIAAkAG4ALgBUAG8AQwBoAGEAcgBBAHIAcgBhAHkAKAApACkAewAKACAAIABpAGYAKABbAEcAbABvAGIAYQBsAGkAegBhAHQAaQBvAG4ALgBDAGgAYQByAFUAbgBpAGMAbwBkAGUASQBuAGYAbwBdADoAOgBHAGUAdABVAG4AaQBjAG8AZABlAEMAYQB0AGUAZwBvAHIAeQAoACQAYwApACAALQBuAGUAIABbAEcAbABvAGIAYQBsAGkAegBhAHQAaQBvAG4ALgBVAG4AaQBjAG8AZABlAEMAYQB0AGUAZwBvAHIAeQBdADoAOgBOAG8AbgBTAHAAYQBjAGkAbgBnAE0AYQByAGsAKQB7ACAAWwB2AG8AaQBkAF0AJABzAGIALgBBAHAAcABlAG4AZAAoACQAYwApACAAfQAKAH0ACgAkAG8AdQB0AD0AJABzAGIALgBUAG8AUwB0AHIAaQBuAGcAKAApAAoAJABvAHUAdAA9AFsAcgBlAGcAZQB4AF0AOgA6AFIAZQBwAGwAYQBjAGUAKAAkAG8AdQB0ACwAJwBbAF4AXAB4ADAAMAAtAFwAeAA3AEYAXQAnACwAJwA/ACcAKQAKACQAbwB1AHQAPQAkAG8AdQB0AC4AUgBlAHAAbABhAGMAZQAoACcAcwBlAHQAIAAiAEEAUwBDAEkASQA9ADAAIgAnACwAJwBzAGUAdAAgACIAQQBTAEMASQBJAD0AMQAiACcAKQAKAFsASQBPAC4ARgBpAGwAZQBdADoAOgBXAHIAaQB0AGUAQQBsAGwAVABlAHgAdAAoACQAZABzAHQALAAkAG8AdQB0ACwAKABOAGUAdwAtAE8AYgBqAGUAYwB0ACAAVABlAHgAdAAuAFUAVABGADgARQBuAGMAbwBkAGkAbgBnACgAJABmAGEAbABzAGUAKQApACkACgA="
+set "PSB64=CgAkAHMAcgBjAD0AJABlAG4AdgA6AFMAQQBfAFMAUgBDADsAIAAkAGQAcwB0AD0AJABlAG4AdgA6AFMAQQBfAEQAUwBUAAoAJAB0AD0AWwBJAE8ALgBGAGkAbABlAF0AOgA6AFIAZQBhAGQAQQBsAGwAVABlAHgAdAAoACQAcwByAGMALABbAFQAZQB4AHQALgBFAG4AYwBvAGQAaQBuAGcAXQA6ADoAVQBUAEYAOAApAAoAJABtAGEAcAA9AEAAewAKACAAKABbAHMAdAByAGkAbgBnAF0AWwBjAGgAYQByAF0AMAB4ADIAMQA5ADQAKQA9ACcAIABvAHUAIAAnADsACgAgACgAWwBzAHQAcgBpAG4AZwBdAFsAYwBoAGEAcgBdADAAeAAyADYAMwAwACkAPQAnAFsAbQBlAG4AdQBdACcAOwAKACAAKABbAHMAdAByAGkAbgBnAF0AWwBjAGgAYQByAF0AMAB4ADIANwAxADMAKQA9ACcATwBLACcAOwAKACAAKAAnAOVlLGcnACkAPQAnAE4AaQBoAG8AbgAgACgASgBhAHAAYQBvACkAJwA7AAoAIAAoACcALYqaW1cwajBEMCcAKQA9ACcAbgBhAG8AIABkAGUAZgBpAG4AaQByACcAOwAKACAAKAAnAACzXNX8u22tJwApAD0AJwBEAGEAZQBoAGEAbgAgAE0AaQBuAGcAdQBrACAAKABDAG8AcgBlAGkAYQApACcAOwAKACAAKAAnACTBFchY1cDJIABKxUzHJwApAD0AJwBuAGEAbwAgAGQAZQBmAGkAbgBpAHIAJwAKAH0ACgBmAG8AcgBlAGEAYwBoACgAJABrACAAaQBuACAAJABtAGEAcAAuAEsAZQB5AHMAKQB7ACAAJAB0AD0AJAB0AC4AUgBlAHAAbABhAGMAZQAoACQAawAsACQAbQBhAHAAWwAkAGsAXQApACAAfQAKACQAYQByAHIAbwB3AD0AWwBjAGgAYQByAF0AMAB4ADIAMQA5ADIACgAkAHMAYgAyAD0ATgBlAHcALQBPAGIAagBlAGMAdAAgAFQAZQB4AHQALgBTAHQAcgBpAG4AZwBCAHUAaQBsAGQAZQByAAoAZgBvAHIAZQBhAGMAaAAoACQAbABpAG4AZQAgAGkAbgAgACQAdAAgAC0AcwBwAGwAaQB0ACAAIgBgAHIAYABuACIAKQB7AAoAIAAgAGkAZgAoACQAbABpAG4AZQAuAEkAbgBkAGUAeABPAGYAKAAkAGEAcgByAG8AdwApACAALQBnAGUAIAAwACkAewAKACAAIAAgACAAJABxAD0AJABmAGEAbABzAGUAOwAgACQAbgBsAD0ATgBlAHcALQBPAGIAagBlAGMAdAAgAFQAZQB4AHQALgBTAHQAcgBpAG4AZwBCAHUAaQBsAGQAZQByAAoAIAAgACAAIABmAG8AcgBlAGEAYwBoACgAJABjACAAaQBuACAAJABsAGkAbgBlAC4AVABvAEMAaABhAHIAQQByAHIAYQB5ACgAKQApAHsACgAgACAAIAAgACAAIABpAGYAKAAkAGMAIAAtAGUAcQAgACcAIgAnACkAewAgACQAcQA9AC0AbgBvAHQAIAAkAHEAOwAgAFsAdgBvAGkAZABdACQAbgBsAC4AQQBwAHAAZQBuAGQAKAAkAGMAKQAgAH0ACgAgACAAIAAgACAAIABlAGwAcwBlAGkAZgAoACQAYwAgAC0AZQBxACAAJABhAHIAcgBvAHcAKQB7ACAAaQBmACgAJABxACkAewBbAHYAbwBpAGQAXQAkAG4AbAAuAEEAcABwAGUAbgBkACgAJwAtAD4AJwApAH0AIABlAGwAcwBlACAAewBbAHYAbwBpAGQAXQAkAG4AbAAuAEEAcABwAGUAbgBkACgAJwAtAF4APgAnACkAfQAgAH0ACgAgACAAIAAgACAAIABlAGwAcwBlAHsAIABbAHYAbwBpAGQAXQAkAG4AbAAuAEEAcABwAGUAbgBkACgAJABjACkAIAB9AAoAIAAgACAAIAB9AAoAIAAgACAAIAAkAGwAaQBuAGUAPQAkAG4AbAAuAFQAbwBTAHQAcgBpAG4AZwAoACkACgAgACAAfQAKACAAIABbAHYAbwBpAGQAXQAkAHMAYgAyAC4AQQBwAHAAZQBuAGQAKAAkAGwAaQBuAGUAKQA7ACAAWwB2AG8AaQBkAF0AJABzAGIAMgAuAEEAcABwAGUAbgBkACgAIgBgAHIAYABuACIAKQAKAH0ACgAkAHQAPQAkAHMAYgAyAC4AVABvAFMAdAByAGkAbgBnACgAKQA7ACAAaQBmACgAJAB0AC4ATABlAG4AZwB0AGgAIAAtAGcAZQAgADIAKQB7ACAAJAB0AD0AJAB0AC4AUwB1AGIAcwB0AHIAaQBuAGcAKAAwACwAJAB0AC4ATABlAG4AZwB0AGgALQAyACkAIAB9AAoAJABuAD0AJAB0AC4ATgBvAHIAbQBhAGwAaQB6AGUAKABbAFQAZQB4AHQALgBOAG8AcgBtAGEAbABpAHoAYQB0AGkAbwBuAEYAbwByAG0AXQA6ADoARgBvAHIAbQBEACkACgAkAHMAYgA9AE4AZQB3AC0ATwBiAGoAZQBjAHQAIABUAGUAeAB0AC4AUwB0AHIAaQBuAGcAQgB1AGkAbABkAGUAcgAKAGYAbwByAGUAYQBjAGgAKAAkAGMAIABpAG4AIAAkAG4ALgBUAG8AQwBoAGEAcgBBAHIAcgBhAHkAKAApACkAewAKACAAIABpAGYAKABbAEcAbABvAGIAYQBsAGkAegBhAHQAaQBvAG4ALgBDAGgAYQByAFUAbgBpAGMAbwBkAGUASQBuAGYAbwBdADoAOgBHAGUAdABVAG4AaQBjAG8AZABlAEMAYQB0AGUAZwBvAHIAeQAoACQAYwApACAALQBuAGUAIABbAEcAbABvAGIAYQBsAGkAegBhAHQAaQBvAG4ALgBVAG4AaQBjAG8AZABlAEMAYQB0AGUAZwBvAHIAeQBdADoAOgBOAG8AbgBTAHAAYQBjAGkAbgBnAE0AYQByAGsAKQB7ACAAWwB2AG8AaQBkAF0AJABzAGIALgBBAHAAcABlAG4AZAAoACQAYwApACAAfQAKAH0ACgAkAG8AdQB0AD0AJABzAGIALgBUAG8AUwB0AHIAaQBuAGcAKAApAAoAJABvAHUAdAA9AFsAcgBlAGcAZQB4AF0AOgA6AFIAZQBwAGwAYQBjAGUAKAAkAG8AdQB0ACwAJwBbAF4AXAB4ADAAMAAtAFwAeAA3AEYAXQAnACwAJwA/ACcAKQAKACQAbwB1AHQAPQAkAG8AdQB0AC4AUgBlAHAAbABhAGMAZQAoACcAcwBlAHQAIAAiAEEAUwBDAEkASQA9ADAAIgAnACwAJwBzAGUAdAAgACIAQQBTAEMASQBJAD0AMQAiACcAKQAKAFsASQBPAC4ARgBpAGwAZQBdADoAOgBXAHIAaQB0AGUAQQBsAGwAVABlAHgAdAAoACQAZABzAHQALAAkAG8AdQB0ACwAKABOAGUAdwAtAE8AYgBqAGUAYwB0ACAAVABlAHgAdAAuAFUAVABGADgARQBuAGMAbwBkAGkAbgBnACgAJABmAGEAbABzAGUAKQApACkACgA="
 set "PSSPEED=CgAkAGQAPQAkAGUAbgB2ADoAUwBEAEwAKwAnADoAXAAnAAoAJABmAD0ASgBvAGkAbgAtAFAAYQB0AGgAIAAkAGQAIAAnAHQAZQBzAHQAZQBfAHYAZQBsAG8AYwBpAGQAYQBkAGUALgB0AG0AcAAnAAoAJABtAGIAPQAyADAAMAAKACQAYgB1AGYAPQBOAGUAdwAtAE8AYgBqAGUAYwB0ACAAYgB5AHQAZQBbAF0AIAAoADEATQBCACkAOwAgACgATgBlAHcALQBPAGIAagBlAGMAdAAgAFIAYQBuAGQAbwBtACkALgBOAGUAeAB0AEIAeQB0AGUAcwAoACQAYgB1AGYAKQAKACQAcwB3AD0AWwBEAGkAYQBnAG4AbwBzAHQAaQBjAHMALgBTAHQAbwBwAHcAYQB0AGMAaABdADoAOgBTAHQAYQByAHQATgBlAHcAKAApAAoAJABmAHMAPQBbAEkATwAuAEYAaQBsAGUAXQA6ADoATwBwAGUAbgAoACQAZgAsACcAQwByAGUAYQB0AGUAJwAsACcAVwByAGkAdABlACcALAAnAE4AbwBuAGUAJwApAAoAZgBvAHIAKAAkAGkAPQAwADsAJABpACAALQBsAHQAIAAkAG0AYgA7ACQAaQArACsAKQB7ACAAJABmAHMALgBXAHIAaQB0AGUAKAAkAGIAdQBmACwAMAAsACQAYgB1AGYALgBMAGUAbgBnAHQAaAApACAAfQAKACQAZgBzAC4ARgBsAHUAcwBoACgAJAB0AHIAdQBlACkAOwAgACQAZgBzAC4AQwBsAG8AcwBlACgAKQA7ACAAJABzAHcALgBTAHQAbwBwACgAKQAKACQAdwA9AFsAbQBhAHQAaABdADoAOgBSAG8AdQBuAGQAKAAkAG0AYgAvACQAcwB3AC4ARQBsAGEAcABzAGUAZAAuAFQAbwB0AGEAbABTAGUAYwBvAG4AZABzACwAMQApAAoAJABzAHcAPQBbAEQAaQBhAGcAbgBvAHMAdABpAGMAcwAuAFMAdABvAHAAdwBhAHQAYwBoAF0AOgA6AFMAdABhAHIAdABOAGUAdwAoACkACgAkAGYAcwA9AFsASQBPAC4ARgBpAGwAZQBdADoAOgBPAHAAZQBuACgAJABmACwAJwBPAHAAZQBuACcALAAnAFIAZQBhAGQAJwAsACcATgBvAG4AZQAnACkAOwAgACQAcgA9AE4AZQB3AC0ATwBiAGoAZQBjAHQAIABiAHkAdABlAFsAXQAgACgAMQBNAEIAKQA7ACAAJAB0AG8AdAA9ADAACgB3AGgAaQBsAGUAKAAoACQAbgA9ACQAZgBzAC4AUgBlAGEAZAAoACQAcgAsADAALAAkAHIALgBMAGUAbgBnAHQAaAApACkAIAAtAGcAdAAgADAAKQB7ACAAJAB0AG8AdAArAD0AJABuACAAfQAKACQAZgBzAC4AQwBsAG8AcwBlACgAKQA7ACAAJABzAHcALgBTAHQAbwBwACgAKQAKACQAcgBkAD0AWwBtAGEAdABoAF0AOgA6AFIAbwB1AG4AZAAoACgAJAB0AG8AdAAvADEATQBCACkALwAkAHMAdwAuAEUAbABhAHAAcwBlAGQALgBUAG8AdABhAGwAUwBlAGMAbwBuAGQAcwAsADEAKQAKAFIAZQBtAG8AdgBlAC0ASQB0AGUAbQAgACQAZgAgAC0ARgBvAHIAYwBlAAoAIgAgACAAIABFAHMAYwByAGkAdABhACAAcwBlAHEAdQBlAG4AYwBpAGEAbAA6ACAAJAB3ACAATQBCAC8AcwAgACAAIABMAGUAaQB0AHUAcgBhACAAcwBlAHEAdQBlAG4AYwBpAGEAbAA6ACAAJAByAGQAIABNAEIALwBzACAAIAAgACgAYQByAHEAdQBpAHYAbwAgAGQAZQAgACQAbQBiACAATQBCACkAIgAKAGkAZgAoACQAdwAgAC0AbAB0ACAANQApAHsAIAAiACAAIAAgAEEAVgBJAFMATwA6ACAAZQBzAGMAcgBpAHQAYQAgAG0AdQBpAHQAbwAgAGwAZQBuAHQAYQAgAG8AdQAgAGMAYQByAHQAYQBvACAAZgBhAGwAcwBvAC8AZABlAGYAZQBpAHQAdQBvAHMAbwAuACAAUgBvAGQAZQAgAG8AIABIADIAdABlAHMAdAB3AC4AIgAgAH0AIABlAGwAcwBlAGkAZgAoACQAdwAgAC0AbAB0ACAAMQAwACkAewAgACIAIAAgACAATABlAG4AdABvACwAIABtAGEAcwAgAGYAdQBuAGMAaQBvAG4AYQAuACAAVQBtACAAYwBhAHIAdABhAG8AIABDAGwAYQBzAHMAZQAgADEAMAAvAEEAMQAgAHIAZQBhAGwAIABlAHMAYwByAGUAdgBlACAAMQA1AC0ANAAwACAATQBCAC8AcwAuACIAIAB9ACAAZQBsAHMAZQAgAHsAIAAiACAAIAAgAE8ASwAgAHAAYQByAGEAIABvACAAMwBEAFMALgAiACAAfQAKAA=="
 set "DESTINO=MENU"
 set "VOLTAR=MENU"
@@ -40,7 +40,7 @@ echo.
 echo   Este guia segue o 3ds.hacks.guide, passo a passo, e pede confirmação a cada ação física
 echo   (virar o console, tirar o cartão, apertar botões). Nada é feito no console pelo PC.
 echo.
-if not "%PASSO%"=="0" echo   Progresso salvo: você parou no passo %PASSO% de %TOTAL%   (método: %METODO%  região: %REGIAO%)
+if not "%PASSO%"=="0" echo   Progresso salvo: você parou no passo %PASSO% de %TOTAL%   ^(método: %METODO%  região: %REGIAO%^)
 if not "%PASSO%"=="0" echo.
 echo   [1] Começar do início (passo 1)
 echo   [2] Continuar de onde parei
@@ -284,13 +284,13 @@ echo                        New 3DS 11.4 a 11.17, TODAS as regiões. Exige remov
 echo                        (no New 3DS XL isso significa abrir a tampa traseira com ele ligado - dá para fazer
 echo                        com cuidado, o guia explica).
 echo.
-if "%REC%"=="SKATER" echo   MÉTODO RECOMENDADO: super-skaterhax  (é o que o seletor oficial do 3ds.hacks.guide indica para o seu caso)
-if "%REC%"=="MSET9"  echo   MÉTODO RECOMENDADO: MSET9  (é o que o seletor oficial do 3ds.hacks.guide indica para o seu caso)
+if "%REC%"=="SKATER" echo   MÉTODO RECOMENDADO: super-skaterhax  ^(é o que o seletor oficial do 3ds.hacks.guide indica para o seu caso^)
+if "%REC%"=="MSET9"  echo   MÉTODO RECOMENDADO: MSET9  ^(é o que o seletor oficial do 3ds.hacks.guide indica para o seu caso^)
 echo.
 choice /c 12 /n /m "   [1] super-skaterhax    [2] MSET9    : "
 if errorlevel 2 set "METODO=MSET9"
 if not errorlevel 2 set "METODO=SKATER"
-if "%METODO%"=="SKATER" if "%REGIAO%"=="JPN" echo   AVISO: skaterhax em console japonês costuma falhar (erro 032-0420). Prefira MSET9.
+if "%METODO%"=="SKATER" if "%REGIAO%"=="JPN" echo   AVISO: skaterhax em console japonês costuma falhar ^(erro 032-0420^). Prefira MSET9.
 if "%METODO%"=="SKATER" if "%FAIXA%"=="2" echo   AVISO: skaterhax exige 11.15 ou superior. Na sua versão use MSET9.
 echo.
 echo   Método escolhido: %METODO%
@@ -415,8 +415,8 @@ for /f "tokens=1-3 delims=;" %%A in ("%INFO%") do (set "FS=%%A" & set "LIVRE=%%B
 echo     Sistema de arquivos : %FS%
 echo     Tamanho total       : %TAM% GB
 echo     Espaço livre        : %LIVRE% GB
-if exist "%SDL%:\Nintendo 3DS\" echo     Pasta "Nintendo 3DS" : encontrada (OK)
-if not exist "%SDL%:\Nintendo 3DS\" echo     Pasta "Nintendo 3DS" : NÃO encontrada (o console cria ao ligar com o cartão; para MSET9 ela é obrigatória)
+if exist "%SDL%:\Nintendo 3DS\" echo     Pasta "Nintendo 3DS" : encontrada ^(OK^)
+if not exist "%SDL%:\Nintendo 3DS\" echo     Pasta "Nintendo 3DS" : NÃO encontrada ^(o console cria ao ligar com o cartão; para MSET9 ela é obrigatória^)
 echo.
 echo   Requisitos do 3DS:
 echo     - Sistema de arquivos: FAT32 (exFAT e NTFS NÃO funcionam; cartões acima de 32 GB vêm em exFAT).
@@ -456,12 +456,12 @@ echo     [C] x_finalize_helper.firm
 echo         https://github.com/hacks-guide/finalize/releases/latest/download/x_finalize_helper.firm
 echo.
 if "%METODO%"=="SKATER" echo   ESPECÍFICO DO super-skaterhax:
-if "%METODO%"=="SKATER" echo     [D] Super-skaterhax .zip para a SUA região (%REGIAO%) e SUA versão (ex.: 11.17.0-50)
+if "%METODO%"=="SKATER" echo     [D] Super-skaterhax .zip para a SUA região ^(%REGIAO%^) e SUA versão ^(ex.: 11.17.0-50^)
 if "%METODO%"=="SKATER" echo         https://skater.nintendohomebrew.com
 if "%METODO%"=="MSET9"  echo   ESPECÍFICO DO MSET9:
-if "%METODO%"=="MSET9"  echo     [D] MSET9 (arquivo MSET9-vX.X.zip da release mais recente)
+if "%METODO%"=="MSET9"  echo     [D] MSET9 ^(arquivo MSET9-vX.X.zip da release mais recente^)
 if "%METODO%"=="MSET9"  echo         https://github.com/hacks-guide/MSET9/releases/latest
-if "%METODO%"=="MSET9"  echo     [E] Python 3 (instalador do site oficial; NÃO use a versão da Microsoft Store)
+if "%METODO%"=="MSET9"  echo     [E] Python 3 ^(instalador do site oficial; NÃO use a versão da Microsoft Store^)
 if "%METODO%"=="MSET9"  echo         https://www.python.org/downloads/windows/
 echo.
 choice /c SN /n /m "   [S] Abrir todos esses links no navegador agora    [N] Já baixei / vou baixar manualmente : "
@@ -498,9 +498,9 @@ echo     :-- luma\
 echo     :     +-- payloads\
 echo     :           +-- x_finalize_helper.firm   (download [C])
 echo     :-- Nintendo 3DS\                  (já existe; NÃO mexa)
-if "%METODO%"=="SKATER" echo     :-- (TODO o conteúdo do Super-skaterhax .zip, na raiz, sobrescrevendo se perguntar)
-if "%METODO%"=="MSET9"  echo     :-- (TODO o conteúdo do MSET9 .zip, na raiz, sobrescrevendo se perguntar)
-if "%METODO%"=="MSET9"  echo     :-- MSET9-Windows.bat, mset9.py, boot9strap\, SafeB9S.bin ...  (vêm do MSET9 .zip)
+if "%METODO%"=="SKATER" echo     :-- ^(TODO o conteúdo do Super-skaterhax .zip, na raiz, sobrescrevendo se perguntar^)
+if "%METODO%"=="MSET9"  echo     :-- ^(TODO o conteúdo do MSET9 .zip, na raiz, sobrescrevendo se perguntar^)
+if "%METODO%"=="MSET9"  echo     :-- MSET9-Windows.bat, mset9.py, boot9strap\, SafeB9S.bin ...  ^(vêm do MSET9 .zip^)
 echo.
 echo   Como fazer:
 echo     1. Abra o Luma3DS .zip → copie boot.firm e boot.3dsx para a raiz do cartão.
@@ -535,9 +535,9 @@ if "%METODO%"=="SKATER" call :CHECA "%SDL%:\SafeB9S.bin"
 if "%METODO%"=="SKATER" call :CHECA "%SDL%:\arm11code.bin"
 echo.
 if "%FALTA%"=="0" echo   RESULTADO: todos os arquivos esperados estão no lugar.
-if not "%FALTA%"=="0" echo   RESULTADO: faltam %FALTA% arquivo(s). Copie os que estão marcados como FALTA e repita este passo.
-if not "%FALTA%"=="0" echo   (Se o nome do arquivo do exploit mudou em uma release nova, confira dentro do .zip; o essencial é
-if not "%FALTA%"=="0" echo    ter TUDO do .zip na raiz do cartão.)
+if not "%FALTA%"=="0" echo   RESULTADO: faltam %FALTA% arquivo^(s^). Copie os que estão marcados como FALTA e repita este passo.
+if not "%FALTA%"=="0" echo   ^(Se o nome do arquivo do exploit mudou em uma release nova, confira dentro do .zip; o essencial é
+if not "%FALTA%"=="0" echo    ter TUDO do .zip na raiz do cartão.^)
 echo.
 echo   Por último: no Windows, clique em "Remover hardware com segurança" antes de tirar o cartão.
 call :FIM_PASSO 11
@@ -566,7 +566,7 @@ echo   1. Ligue o console. Espere o menu HOME.
 echo   2. Se aparecer aviso de "cartão SD não reconhecido": desligue, refaça o passo 12 (cartão mal encaixado
 echo      ou formato errado - veja passo 9).
 if "%METODO%"=="SKATER" echo   3. O super-skaterhax PRECISA de internet. Configurações do Console → Configurações da Internet →
-if "%METODO%"=="SKATER" echo      Configurações de Conexão → escolha uma conexão → conecte à sua rede Wi-Fi (2,4 GHz; o 3DS não usa 5 GHz).
+if "%METODO%"=="SKATER" echo      Configurações de Conexão → escolha uma conexão → conecte à sua rede Wi-Fi ^(2,4 GHz; o 3DS não usa 5 GHz^).
 if "%METODO%"=="SKATER" echo      Teste a conexão até aparecer "Conexão bem-sucedida".
 if "%METODO%"=="MSET9"  echo   3. O MSET9 NÃO precisa de internet. Se o console pedir para conectar, pode ignorar por enquanto.
 echo   4. Confirme que o ícone do cartão SD aparece no menu HOME (canto superior esquerdo mostra os blocos livres).
@@ -966,7 +966,7 @@ set "SAVEBKP=%USERPROFILE%\Desktop\Backup_Saves_3DS"
 robocopy "%SDL%:\3ds\Checkpoint" "%SAVEBKP%" /E /R:2 /W:2 /NP /NFL /NDL
 echo   Copiado para %SAVEBKP%
 :PASSO_29_SEM
-if not exist "%SDL%:\3ds\Checkpoint\" echo   Pasta %SDL%:\3ds\Checkpoint não existe ainda (faça pelo menos um backup no console).
+if not exist "%SDL%:\3ds\Checkpoint\" echo   Pasta %SDL%:\3ds\Checkpoint não existe ainda ^(faça pelo menos um backup no console^).
 :PASSO_29_FIM
 echo.
 call :AGUARDAR "Pressione qualquer tecla para continuar"

@@ -30,6 +30,19 @@ Todos os três têm a opção **Modo sem acentos** no menu: gera uma cópia `*_s
 
 Os arquivos são **UTF-8 sem BOM** com finais de linha **CRLF** (o `.gitattributes` desta pasta força isso). Se editar, mantenha esse formato: BOM no início quebra a primeira linha do batch, e `chcp 65001` é o que permite os acentos.
 
+## Testes executados
+
+Os três scripts foram executados de verdade sob o `cmd.exe` do Wine 9.0 (Linux), não só analisados:
+
+- **Cobertura total de rótulos**: os 183 rótulos dos três arquivos foram executados um a um por um despachante de teste. Zero erros de sintaxe, zero rótulo inexistente, zero comando não reconhecido.
+- **Fluxos completos**: 3DS passos 1-16 e 23-30; Quest guia 1 passos 1-18; Quest guia 2 passos 1-26.
+- **Ramificações condicionais** (método MSET9 x super-skaterhax, regiões, faixas de versão) forçadas por meio do arquivo de progresso.
+- **Comandos externos** verificados pelos argumentos montados: robocopy, curl, format, winget, adb, schtasks, powershell.
+- **PowerShell embutido**: os 9 trechos validados com o parser do PowerShell 7.4; os executáveis no Linux rodados de verdade.
+- **Modo sem acentos**: conversão aplicada aos três arquivos, resultado com 0 bytes não-ASCII, e as cópias geradas também executadas sob o Wine sem erros.
+
+Limitações do ambiente: o `set /p`, o `choice` e o `if exist` de diretório do Wine divergem do Windows, então essas chamadas foram substituídas ou neutralizadas apenas na cópia de teste. Os arquivos entregues não foram alterados por isso.
+
 ## Fontes consultadas (setembro/2026)
 
 - https://3ds.hacks.guide/get-started (seletor de método, `assets/js/selecting.js`)
