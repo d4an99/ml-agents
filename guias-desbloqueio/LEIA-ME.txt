@@ -23,8 +23,13 @@ QUAL ARQUIVO USAR
       NetherSX2 (PS2), X1 BOX (Xbox), Eden (Switch), RetroArch, PPSSPP,
       Dolphin, streaming do PC, Stremio e como colocar os jogos (26 passos).
 
+  Desbloqueio_PSP.bat
+      PSP: custom firmware ARK-4 + cIPL permanente (24 passos).
+      Serve para PSP-1000, 2000, 3000, Go (N1000) e Street (E1000).
+      Faz primeiro a CFW temporaria (risco zero) e so depois a permanente.
+
   *_sem_acentos.bat
-      As mesmas tres guias em ASCII puro. Use SOMENTE se os acentos
+      As mesmas quatro guias em ASCII puro. Use SOMENTE se os acentos
       aparecerem trocados no Prompt de Comando. O conteudo e identico.
 
 ORDEM RECOMENDADA PARA O QUEST
