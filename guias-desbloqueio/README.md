@@ -9,6 +9,26 @@ Quatro scripts de Prompt de Comando do Windows que guiam, passo a passo e com co
 | `Meta_Quest_3S_Emuladores_e_Apps.bat` | Meta Quest 3S (parte 2) | Lightning Launcher, CitraVR (3DS), melonDS (NDS), NetherSX2 (PS2), X1 BOX/xemu (Xbox original), Xbox Cloud Gaming, Eden (Switch), envio de jogos via ADB, como jogar e Stremio |
 | `Desbloqueio_PSP.bat` | PSP-1000, 2000, 3000, Go (N1000) e Street (E1000) | CFW [ARK-4](https://github.com/PSP-Archive/ARK-4) v4.20.69 r206 sobre o firmware oficial 6.61: primeiro temporária (ARK Loader), depois permanente (cIPL) |
 
+## Dois formatos
+
+Cada guia existe em `.bat` (duplo clique, nada a instalar) e, desde esta versao, tudo
+tambem em um unico `Guias-Desbloqueio.ps1` para PowerShell. O `.ps1` cobre os quatro
+guias no mesmo menu e faz melhor a parte de PC: lista as unidades removiveis com
+sistema de arquivos e espaco, calcula SHA256 de BIOS/keys, localiza o `adb.exe` e
+diagnostica a conexao do Quest, e salva o progresso em JSON.
+
+| Arquivo | Para que serve |
+|---|---|
+| `O_QUE_FAZER.txt` | Resumo pratico em texto puro: o que fazer, em que ordem, onde estao os riscos e os checklists por console. Para imprimir ou ler no celular. |
+| `Guias-Desbloqueio.ps1` | Os quatro guias em PowerShell 5.1+ (o que ja vem no Windows 10/11). `-SelfTest` confere o script, `-Listar` mostra todos os passos, `-Guia psp -Passo 16` vai direto a um ponto. |
+
+```powershell
+# conferir que esta sadio antes de usar
+powershell -ExecutionPolicy Bypass -File .\Guias-Desbloqueio.ps1 -SelfTest
+# abrir o menu
+powershell -ExecutionPolicy Bypass -File .\Guias-Desbloqueio.ps1
+```
+
 ## Como usar
 
 1. Copie o `.bat` para qualquer pasta do PC (Windows 10/11).
@@ -45,6 +65,16 @@ Os quatro scripts foram executados de verdade sob o `cmd.exe` do Wine 9.0 (Linux
 - **Defeito encontrado no guia do PSP e corrigido**: 12 linhas do tipo `if ... echo` traziam parênteses sem escape no texto, o que fazia o `cmd.exe` tentar executar pedaços da frase como comando. Foram escapados como `^(` e `^)` e a varredura voltou limpa.
 
 Limitações do ambiente: o `set /p`, o `choice` e o `if exist` de diretório do Wine divergem do Windows, então essas chamadas foram substituídas ou neutralizadas apenas na cópia de teste. Os arquivos entregues não foram alterados por isso.
+
+### Sobre o `.ps1`
+
+O `.ps1` nao passou pela bateria de execucao sob Wine como os `.bat`: nao havia
+PowerShell disponivel no ambiente de desenvolvimento. Ele foi validado por analise
+estatica (balanceamento de blocos ciente de strings e comentarios, numeracao dos 98
+passos dos quatro guias, toda acao citada em um passo com tratamento no dispatcher,
+nenhuma chamada a funcao inexistente, zero bytes nao-ASCII) e traz um `-SelfTest` que
+roda no seu Windows e confere 60+ itens, incluindo gravacao e leitura do progresso.
+Rode o `-SelfTest` uma vez antes de usar.
 
 ## Fontes consultadas (setembro/2026)
 

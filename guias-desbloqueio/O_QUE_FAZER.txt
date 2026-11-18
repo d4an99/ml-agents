@@ -1,0 +1,274 @@
+O QUE FAZER - GUIAS DE DESBLOQUEIO
+New 3DS XL  |  Meta Quest 3S  |  PSP
+==========================================================================
+
+Este arquivo e o resumo pratico: o que fazer, em que ordem, e onde estao
+os pontos de risco. Os guias (.bat ou .ps1) conduzem passo a passo.
+
+   .bat  -> duplo clique, nao precisa de nada instalado
+   .ps1  -> Guias-Desbloqueio.ps1, mesma coisa em PowerShell, com as
+            ferramentas de PC melhores (deteccao de unidade, hash, ADB)
+
+Para rodar o .ps1 (PowerShell 5.1 ja vem no Windows 10/11):
+
+   1. Clique com o botao direito em Guias-Desbloqueio.ps1 -> Propriedades
+      -> marque "Desbloquear" -> OK
+   2. Abra o PowerShell na pasta e rode:
+         powershell -ExecutionPolicy Bypass -File .\Guias-Desbloqueio.ps1
+   3. Antes de usar de verdade, confira se esta tudo sadio:
+         powershell -ExecutionPolicy Bypass -File .\Guias-Desbloqueio.ps1 -SelfTest
+
+   Atalhos uteis:
+      -Listar                   mostra todos os passos dos quatro guias
+      -Guia psp                 abre direto um guia (3ds, quest, quest-emu, psp)
+      -Guia psp -Passo 16       vai direto a um passo
+      -SemCor                   desliga as cores
+
+==========================================================================
+ORDEM GERAL
+==========================================================================
+
+   1) PSP          - mais simples, bom para pegar o jeito
+   2) New 3DS XL   - mais passos, exige abrir a tampa do cartao
+   3) Quest 3S     - parte 1 (Modo Desenvolvedor) e DEPOIS parte 2 (emuladores)
+
+Os tres sao independentes. Se so quer um, va direto nele.
+
+==========================================================================
+ANTES DE COMECAR QUALQUER UM
+==========================================================================
+
+   [ ] Carregador do aparelho a mao e tomada livre
+   [ ] Cabo USB de DADOS (cabo "so carga" e a causa n.1 de "nao conecta")
+   [ ] Espaco livre no PC para os backups (uns 10 GB folgam)
+   [ ] Tempo: 40 min (PSP), 1 h a 1 h 30 (3DS), 30 min + 1 h (Quest)
+   [ ] Paciencia para NAO pular o passo de backup
+
+REGRA QUE VALE PARA OS TRES: backup primeiro, modificacao depois.
+
+==========================================================================
+PSP  -  CFW ARK-4 + cIPL          (24 passos | risco baixo)
+==========================================================================
+
+O QUE VOCE GANHA
+   Homebrew, emuladores, ISO/CSO dos seus UMDs, jogos de PS1, plugins,
+   temas, overclock. Para de depender do leitor de UMD.
+
+O QUE TER EM MAOS
+   [ ] PSP (1000, 2000, 3000, Go ou Street) carregado + carregador
+   [ ] Memory Stick PRO Duo, ou microSD com adaptador, em FAT32
+       (no PSP Go a memoria interna de 16 GB serve)
+   [ ] Cabo mini-USB (ou o multiuso do Go)
+   [ ] ARK4.zip baixado:  github.com/PSP-Archive/ARK-4/releases
+       versao recomendada: v4.20.69 r206 (ultima estavel)
+
+O QUE FAZER
+   [ ]  1. Vire o PSP e leia o modelo na etiqueta da traseira
+   [ ]  2. Leia a versao do firmware: Configuracoes -> Configuracoes do
+          Sistema -> Informacoes do Sistema
+   [ ]  3. Se estiver abaixo de 6.61, atualize para o 6.61 oficial
+          (EBOOT.PBP em PSP\GAME\UPDATE\, bateria cheia, nao desligar)
+   [ ]  4. Conecte no PC: Configuracoes -> Conexao USB
+   [ ]  5. BACKUP do cartao inteiro para o PC
+   [ ]  6. Confirme FAT32 e o espaco livre
+   [ ]  7. Crie as pastas: ISO, PSP\GAME, PSP\SAVEDATA, MUSIC, PICTURE, VIDEO
+   [ ]  8. Copie do ARK4.zip:
+             ARK_01234   -> PSP\SAVEDATA\
+             ARK_Loader  -> PSP\GAME\
+             ARK_cIPL    -> PSP\GAME\
+   [ ]  9. Confira que PSP\GAME\ARK_Loader\EBOOT.PBP existe
+   [ ] 10. Ejete a unidade no Windows e saia do modo USB (botao O)
+   [ ] 11. No PSP: Jogo -> Memory Stick -> ARK Loader -> X
+          A tela pisca e o console reinicia: e o esperado
+   [ ] 12. Confirme em Informacoes do Sistema:  6.61 ARK-4 Live
+   [ ] 13. DECIDA:
+             ficar na temporaria  -> zero risco, roda o ARK Loader ao ligar
+             fazer o cIPL         -> liga ja com CFW (continue abaixo)
+   [ ] 14. cIPL: carregador na tomada, CFW temporaria ativa,
+          Jogo -> Memory Stick -> ARK cIPL Flasher -> confirmar
+          NAO aperte nada durante a gravacao
+   [ ] 15. Reinicie e confirme:  ARK 4.20.XX cIPL
+   [ ] 16. SELECT no XMB abre o menu do ARK (clock, plugins, ISO mode)
+   [ ] 17. Jogos: ISO/CSO em \ISO   homebrew e PS1 em \PSP\GAME
+   [ ] 18. Backup dos saves (PSP\SAVEDATA) para o PC
+
+PONTO DE RISCO
+   So o passo 14 (cIPL) grava na NAND. Bateria cheia + carregador na
+   tomada + nao mexer = risco quase zero.
+   Recuperacao por bateria Pandora: PSP-1000 e PSP-2000 com placa TA-085
+   ou anterior, sim. PSP-2000 TA-088v3, 3000, Go e Street, NAO.
+   Voce pode ficar na CFW temporaria e nunca correr esse risco.
+
+COMO DESFAZER
+   Rode o DC-ARK (vem no ARK4.zip). Formatar o cartao NAO remove o cIPL:
+   ele esta na NAND, nao no cartao.
+
+==========================================================================
+NEW NINTENDO 3DS XL  -  boot9strap + Luma3DS    (30 passos | risco baixo)
+==========================================================================
+
+O QUE VOCE GANHA
+   CFW permanente: homebrew, backups dos seus cartuchos, emuladores,
+   temas, regiao livre, Pretendo Network (online depois do fim do
+   Nintendo Network), backup de saves.
+
+O QUE TER EM MAOS
+   [ ] New 3DS XL carregado + carregador
+   [ ] Chave Phillips pequena (PH00) para a tampa do cartao
+   [ ] Leitor/adaptador de microSD no PC
+   [ ] microSD em FAT32 com 2 GB livres (para o backup da NAND)
+
+O QUE FAZER
+   [ ]  1. Vire o console: confirme RED-001/RED-002 na etiqueta
+   [ ]  2. Anote a versao e a regiao: Configuracoes da Consola, canto
+          inferior direito (ex.: 11.17.0-50U -> U = USA)
+   [ ]  3. Descubra o metodo em 3ds.hacks.guide/get-started:
+             11.15-11.17 USA/EUR/KOR -> super-skaterhax
+             11.4-11.17 qualquer     -> MSET9
+             abaixo de 11.4          -> atualize antes
+   [ ]  4. Desligue o console, solte os 2 parafusos, tire o microSD
+   [ ]  5. BACKUP do cartao inteiro para o PC
+   [ ]  6. Confirme FAT32 e o espaco livre
+   [ ]  7. Se o cartao e novo ou desconhecido, teste com o H2testw
+   [ ]  8. Baixe os arquivos do SEU metodo e copie para a RAIZ do cartao
+   [ ]  9. Crie luma\payloads
+   [ ] 10. Ejete, recoloque o cartao no console, feche a tampa
+   [ ] 11. Rode o exploit (navegador, no super-skaterhax; Gestao de Dados,
+          no MSET9) seguindo a ordem de botoes da pagina
+   [ ] 12. No SafeB9SInstaller, aperte os botoes na ordem da tela.
+          NAO desligue durante a gravacao
+   [ ] 13. Configure o Luma (tela azul) e aperte START
+   [ ] 14. Confirme: L + Down + Select abre o Rosalina
+   [ ] 15. Faca o "Finalizing Setup" do guia oficial
+   [ ] 16. BACKUP DA NAND com o GodMode9 (ligue segurando START)
+   [ ] 17. Copie gm9/backups do cartao para o PC   <-- nao pule
+   [ ] 18. Universal-Updater: GodMode9, Checkpoint, Anemone, FBI
+   [ ] 19. Ligue "Enable game patching" (ligar segurando SELECT)
+   [ ] 20. Pretendo Network, se quiser online
+   [ ] 21. Backup de saves com o Checkpoint
+
+PONTO DE RISCO
+   O passo 12 grava na NAND. O backup da NAND (passos 16 e 17) e o que
+   permite voltar atras depois. Um backup de NAND que fica so no cartao
+   nao e backup.
+
+COMO DESFAZER
+   Pagina "Uninstall CFW" do 3ds.hacks.guide, ou restaurar o backup da NAND.
+
+==========================================================================
+META QUEST 3S - PARTE 1  -  Modo Desenvolvedor    (18 passos | sem risco)
+==========================================================================
+
+O QUE VOCE GANHA
+   Sideload: instalar APKs de fora da loja (emuladores, apps livres),
+   usar ADB por cabo e por Wi-Fi, ajustar Hz/resolucao/CPU/GPU.
+
+NAO EXISTE root, bootloader destravado nem jailbreak para o Quest 3S.
+Site que promete isso e golpe. O que existe e o Modo Desenvolvedor
+OFICIAL da Meta: nao perde garantia, nao apaga dados, e reversivel.
+
+O QUE TER EM MAOS
+   [ ] Conta Meta de MAIOR DE 18 ANOS, nao gerenciada por responsavel
+       (contas de menor nao conseguem: a Meta nao abre excecao)
+   [ ] Celular com o app Meta Horizon pareado com o headset
+   [ ] Cabo USB-C de DADOS
+   [ ] PC com Windows 10/11
+
+O QUE FAZER
+   [ ]  1. Carregue e atualize o Horizon OS
+   [ ]  2. Pareie o headset no app Meta Horizon do celular
+   [ ]  3. Crie a organizacao de desenvolvedor em developers.meta.com
+   [ ]  4. Verifique a conta (SMS ou cartao, sem cobranca)
+   [ ]  5. App do celular -> Dispositivos -> o headset -> Configuracoes
+          -> Modo Desenvolvedor -> ligar
+   [ ]  6. Reinicie o headset
+   [ ]  7. No PC: instale o SideQuest (traz o adb)
+             winget install SideQuest.SideQuest
+   [ ]  8. Ligue o cabo USB-C
+   [ ]  9. COLOQUE O HEADSET NA CABECA e aceite "Permitir depuracao USB"
+          marcando "Sempre permitir"
+   [ ] 10. No headset: Configuracoes -> Sistema -> Desenvolvedor ->
+          ligue "Fontes desconhecidas"
+   [ ] 11. No PC, confira:  adb devices   -> deve listar como "device"
+   [ ] 12. Instale um APK de teste
+   [ ] 13. Procure o app na aba "Fontes desconhecidas" da biblioteca
+   [ ] 14. (Opcional) libere o ADB por Wi-Fi
+   [ ] 15. Backup inicial: capturas, videos, lista de apps
+
+PONTO DE RISCO
+   Nenhum. Nada e gravado em area critica. Desligar o Modo Desenvolvedor
+   devolve tudo como era.
+
+==========================================================================
+META QUEST 3S - PARTE 2  -  emuladores e apps    (26 passos | sem risco)
+==========================================================================
+
+FACA A PARTE 1 PRIMEIRO.
+
+O QUE TER EM MAOS
+   [ ] ADB funcionando (parte 1 concluida)
+   [ ] Suas ROMs, e as BIOS/keys tiradas dos SEUS consoles
+   [ ] Espaco no headset (adb shell df /sdcard)
+
+O QUE FAZER
+   [ ]  1. Instale o Lightning Launcher (mostra apps de sideload junto
+          com os da loja, em grupos)
+   [ ]  2. Crie /sdcard/Emuladores com subpastas por console
+   [ ]  3. Instale os emuladores que interessam:
+             3DS      CitraVR (nativo de VR)
+             NDS      melonDS          (precisa de BIOS do DS)
+             PS2      NetherSX2        (precisa de BIOS do PS2)
+             Switch   Eden             (precisa de prod.keys e firmware)
+             PSP      PPSSPP           (roda muito bem)
+             retro    RetroArch        (varios consoles num app)
+             GC/Wii   Dolphin
+             Xbox     X1 BOX / xemu    (instavel; para Xbox One/Series
+                                        use o Cloud Gaming no navegador)
+   [ ]  4. Envie as ROMs do PC:  adb push "D:\ROMs" /sdcard/Emuladores
+   [ ]  5. Confira o SHA256 das BIOS/keys (hash errado = nada abre)
+   [ ]  6. Converta ISO para CHD se faltar espaco (chdman)
+   [ ]  7. Pareie um gamepad Bluetooth (os Touch nao tem D-pad)
+   [ ]  8. (Opcional) streaming do PC: Sunshine no PC + Moonlight no headset
+   [ ]  9. Backup dos saves para o PC
+   [ ] 10. Stremio, se quiser video
+   [ ] 11. Organize os icones em grupos no Lightning Launcher
+
+QUANDO ALGO NAO ABRE - ordem de diagnostico
+   1. O app aparece em "Fontes desconhecidas"? Se nao, nao instalou.
+   2. BIOS/keys no lugar e com o hash certo?
+   3. A ROM esta na pasta que o emulador aponta nas opcoes DELE?
+   4. Formato suportado? (.iso quase sempre; .chd nem todos)
+   5. Espaco livre?  adb shell df /sdcard
+
+==========================================================================
+REGRAS QUE EVITAM 90% DOS PROBLEMAS
+==========================================================================
+
+   1. Backup antes de modificar. Sempre. Em todos os aparelhos.
+   2. Carregador na tomada em qualquer passo que grave firmware.
+   3. Ejete com seguranca no Windows antes de tirar cartao ou cabo.
+      "Copiei mas nao ejetei" = arquivo truncado = "Dados corrompidos".
+   4. Uma coisa nova por vez (um plugin, um app, um emulador). Se quebrar,
+      voce sabe o que foi.
+   5. Baixe so do GitHub oficial do projeto ou do site oficial.
+   6. Jogos, BIOS e keys vem dos SEUS proprios consoles e midias.
+   7. Cabo USB de DADOS. Testou e nao conecta? Troque o cabo primeiro.
+   8. Cartao de memoria: FAT32, de marca conhecida. Cartao falso ou gasto
+      causa metade dos erros "misteriosos".
+   9. Guarde os instaladores que funcionaram. Projeto arquivado hoje pode
+      sair do ar amanha (foi o que aconteceu com o ARK-4).
+  10. Se um passo falhou, NAO repita igual. Leia a secao de erros do guia.
+
+==========================================================================
+FONTES (consultadas em set/2026)
+==========================================================================
+
+   3DS    https://3ds.hacks.guide/get-started
+          https://3ds.hacks.guide/finalizing-setup
+   Quest  https://developers.meta.com/horizon/documentation/native/android/mobile-device-setup/
+          https://developers.meta.com/horizon/documentation/android-apps/enable-developer-mode/
+   PSP    https://github.com/PSP-Archive/ARK-4/wiki
+          https://github.com/PSP-Archive/ARK-4/releases
+          https://github.com/PSP-Arkfive/ARK-5
+
+Detalhes tecnicos e como os scripts foram testados: README.md

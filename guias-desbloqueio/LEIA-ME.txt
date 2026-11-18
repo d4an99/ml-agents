@@ -10,6 +10,14 @@ COMO USAR
 4. O progresso fica salvo em progresso_*.txt, na mesma pasta.
 
 QUAL ARQUIVO USAR
+  O_QUE_FAZER.txt
+      Resumo pratico: o que fazer, em que ordem e onde estao os riscos.
+      Leia este primeiro.
+
+  Guias-Desbloqueio.ps1
+      Os quatro guias num unico script PowerShell, com ferramentas de PC
+      melhores. Rode antes:  -SelfTest
+
   Desbloqueio_New_3DS_XL.bat
       New Nintendo 3DS XL: boot9strap + Luma3DS (30 passos).
       Tambem cobre Old 3DS/2DS pelo safecerthax e o pos-instalacao.
